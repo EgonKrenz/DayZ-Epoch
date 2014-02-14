@@ -932,3 +932,5 @@ server_setLocalObjVars = {
 	
 	diag_log format["SAFE LOCKED: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), (getPlayerUID _player)];
 };
+
+[] spawn compile preprocessFileLineNumbers "@AH\AH.sqf";
