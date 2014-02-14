@@ -105,8 +105,7 @@ Unique Features:
 * Languages used in the Chat are English and German.
 * Admin Support will only be in English, German and Russian.
 * items lost to bugs can be restored if the cause is traceable.
-* PVP around Traders is forbidden and can result in temp ban.
-* no Admin abuse.
+* no Adminabuse.
 * no Easymode.
 
 <b>teamspeak and forum</b>
