@@ -13,8 +13,10 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 85.131.183.62:2302<br/>
 <b>Name:</b><br/>
 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
-<b>Testserver1:</b> Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc [GMT-5]<br/>
-<b>Testserver2:</b> 5.62.115.87:2302
+<b>Testserver1:</b><br/>
+Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
+<b>Testserver2:</b><br/>
+5.62.115.87:2302
 
 
 Philosophy
@@ -115,7 +117,7 @@ Unique Features:
 things marked with (*) are not fully enabled but soon to be implemented.
 
 
-<b>Changelog:</b>
+<b>Changelog:</b>(old pre 1.1.0)
 
 v0.1	11.12.13
 -vehicles.sqf tuning of spawnvalues/removed vw golf from spawnlist
