@@ -4,7 +4,7 @@
 /* ********************************************************************************* */
 
 // Mission System won't start a mission if server fps < mission_fps_check
-mission_fps_check = 10;
+mission_fps_check = 5;
 // Min Number of Players before mission will spawn
 mission_player_check = 1;
 
@@ -33,7 +33,7 @@ mission_despawn_timer_max = 3600;
 
 // Distance around Plotpoles + Info Boards (i.e trader cities)
 // To blacklist from spawning missions at
-mission_blacklist_range = 200;
+mission_blacklist_range = 400;
 
 // Distance around Players
 // To blacklist from spawning missions at
@@ -87,7 +87,7 @@ mission_loot_tables = ["Military", "MilitaryIndustrial", "MilitarySpecial", "Sup
 mission_num_of_crates = 5;
 
 // Number of Crates to Spawn, when there is a vehicle spawn aswell
-mission_num_of_crates_plus_vehicle = 3;
+mission_num_of_crates_plus_vehicle = 2;
 
 /* ********************************************************************************* */
 /* ********************************************************************************* */
@@ -109,12 +109,14 @@ mission_patrol_land_vehicles = [
 
 // Type of Vehicles to Spawn @ Missions to Loot
 mission_dynamic_ai_vehicles = [
-["AH6X_DZ",1],
-["AN2_DZ",1],
-["ArmoredSUV_PMC_DZE",1],
-["CH_47F_EP1_DZE",1],
+["DSHkM_Mini_TriPod",1],
+["M2HD_mini_TriPod",1],
+//["AH6X_DZ",1],
+//["AN2_DZ",1],
+//["ArmoredSUV_PMC_DZE",1],
+//["CH_47F_EP1_DZE",1],
 ["CSJ_GyroC",1],
-["CSJ_GyroCover",1],
+//["CSJ_GyroCover",1],
 ["CSJ_GyroP",1],
 ["datsun1_civil_1_open",1],
 ["datsun1_civil_2_covered",1],
@@ -131,18 +133,18 @@ mission_dynamic_ai_vehicles = [
 ["KamazRefuel_DZ",1],
 ["LandRover_MG_TK_EP1_DZE",1],
 ["LandRover_Special_CZ_EP1_DZE",1],
-["MH6J_DZ",1],
-["Mi17_Civilian_DZ",1],
-["Mi17_DZE",1],
+//["MH6J_DZ",1],
+//["Mi17_Civilian_DZ",1],
+//["Mi17_DZE",1],
 ["MtvrRefuel_DES_EP1_DZ",1],
 ["Offroad_DSHKM_Gue_DZE",1],
 ["Pickup_PK_GUE_DZE",1],
 ["Pickup_PK_INS_DZE",1],
 ["Pickup_PK_TK_GUE_EP1_DZE",1],
 ["UAZ_MG_TK_EP1_DZE",1],
-["UH1H_DZE",1],
-["UH1Y_DZE",1],
-["UH60M_EP1_DZE",1],
+//["UH1H_DZE",1],
+//["UH1Y_DZE",1],
+//["UH60M_EP1_DZE",1],
 ["Ural_CDF",1],
 ["Ural_TK_CIV_EP1",1],
 ["Ural_UN_EP1",1]

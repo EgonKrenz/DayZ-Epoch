@@ -62,7 +62,7 @@ crate_add_loot = {
 		};
 		case "cfglootweapon":
 		{
-			_amount = round(random 3);
+			_amount = round(random 2);
 			_itemTypes = [] + ((getArray (configFile >> "cfgLoot" >> _iItem)) select 0);
 			_index = dayz_CLBase find _iItem;
 			_weights = dayz_CLChances select _index;
@@ -90,7 +90,7 @@ crate_add_loot = {
 
 		case "weapon":
 		{
-			_amount = round(random 3);
+			_amount = round(random 2);
 			_crate addWeaponCargoGlobal [_iItem,_amount];
 			_mags = [] + getArray (configFile >> "cfgWeapons" >> _iItem >> "magazines");
 			if ((count _mags) > 0) then
