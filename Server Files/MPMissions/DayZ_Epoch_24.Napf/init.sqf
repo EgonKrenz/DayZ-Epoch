@@ -59,6 +59,7 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functi
 progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functions
 progressLoadingScreen 0.5;
+fnc_usec_selfActions = compile preprocessFileLineNumbers "scripts\fn_selfActions.sqf";
 call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 progressLoadingScreen 1.0;
 
