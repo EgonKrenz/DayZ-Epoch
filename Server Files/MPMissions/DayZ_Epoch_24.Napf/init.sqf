@@ -43,11 +43,15 @@ DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 
+ELE_MaxRange = 100; // maximum range the elevator can travel / stop points can be built (in meter)
+ELE_Speed = 5; // speed of the elevator (meters per second)
+ELE_StopWaitTime = 0; // disable the wait time if you call the elevator
+
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
 
 //Load in compiled functions
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
+call compile preprocessFileLineNumbers "fixes\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
 progressLoadingScreen 0.1;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";				//Initilize the publicVariable event handlers
 progressLoadingScreen 0.2;
@@ -89,6 +93,9 @@ if (!isDedicated) then {
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
+	
+	//Elevator
+	["elevator"] execVM "elevator\elevator_init.sqf";
 };
 //#include "\z\addons\dayz_code\system\REsec.sqf"
 //Start Dynamic Weather
