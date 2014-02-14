@@ -331,7 +331,8 @@ spawn_vehicles = {
 			//place vehicle 
 			_veh = createVehicle [_vehicle, _position, [], 0, "CAN_COLLIDE"];
 			_veh setdir _dir;
-			_veh setpos _position;		
+			_veh setpos _position;	
+			[_vehicle,_veh] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";			
 			
 			if(DZEdebug) then {
 				_marker = createMarker [str(_position) , _position];

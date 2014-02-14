@@ -93,6 +93,7 @@ _key call server_hiveWrite;
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
+	[_class,_object] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";
 	// _object setVehicleAmmo DZE_vehicleAmmo;
 
 	_object setVariable ["ObjectID", _oid, true];
