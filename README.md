@@ -10,16 +10,16 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 
 
 <b>IP:</b><br/>
-<b>85.131.183.62:2302</b><br/>
+85.131.183.62:2302<br/>
 <b>Name:</b><br/>
-<b>[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc</b><br/>
-<b>Testserver1: Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc [GMT-5]</b><br/>
-<b>Testserver2: 5.62.115.87:2302</b>
+[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
+<b>Testserver1:</b> Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc [GMT-5]<br/>
+<b>Testserver2:</b> 5.62.115.87:2302
 
 
 Philosophy
 ============
-more features/realism/balance/places/survival/teamplay
+<b>more features/realism/balance/places/survival/teamplay</b>
 
 
 Unique Features:
@@ -32,8 +32,7 @@ Unique Features:
 * advertized Graphicaly through Debug Window Press:F10.
 * randomized loot.
 
-unique Locations
-============
+<b>unique Locations</b>
 * available in 4 Tiers Green/Blue/Red/Black.
 * created only for this Server.
 * spread through Chernarus and Napf.
@@ -42,21 +41,18 @@ unique Locations
 * getting harder the further u are away from spawn places.
 * randomized and customized loot after every restart.
 
-AI
-============
+<b>AI</b>
 * spawns at points of interest like bigger citys and Millitary Bases.
 * spawns randomly near players be on the watch even if u r just Choppin Wood. (will be removed if server is populated enough)
 * has random loot and gets better with higher ai levels.
 * also always take a Radio with u! u can be warned of pursuing ai by placing a radio on the toolbelt.
 
-Events
-============
+<b>Events</b>
 * events will be held by the admins if playercount is over 10.
 * there will be a special Target like: Break into a Admin Base.
 * winners will be rewarded with loot that can be very rare or only obtainable through those events.
 
-Balancing
-============
+<b>Balancing</b>
 * closer to the DayZ Experience.
 * less loot but more value --> more exitement.
 * Vendor Prices tweaked.
@@ -64,13 +60,11 @@ Balancing
 * removed stary sobor tents.
 * removed some too modern looking and unecessary Vehicles.
 
-Enhanced Crafting System
-============
+<b>Enhanced Crafting System</b>
 * lighttower with great Area.
 * more sandbag Buildings.
 
-Environment
-============
+<b>Environment</b>
 * Graphical Player Debug Window with Temperature Values Mission Info and lots more: Press F10
 * snow and cold weather periodically, go find some warm clothes.
 * faster Night means no need for Timezones and all this stuff.
@@ -86,20 +80,17 @@ Environment
 * harder enemys and better loot the more north u go.
 * no selfbloodbag or similar gamebreaker to encourage teamplay and use of food.
 
-Items
-============
+<b>Items</b>
 * new Items never seen before in dayz.
 * rare Loot.
 * randomized Loot after every restart.
 
-up to date
-============
+<b>up to date</b>
 * always up to date even going for development files if the work is worth it.
 * like making UH13 available pre 1.0.4.0.
 * frequently updated changelog and featurelist.
 
-active Admins
-============
+<b>active Admins</b>
 * just ask Admins ingame if u:
 * have a problem.
 * have a proposal for a new Feature.
@@ -108,8 +99,7 @@ active Admins
 * Admins can read the Chat even if they are not Ingame.
 * Egon and Leon will quickly fix things depending on the importance.
 
-Rules
-============
+<b>Rules</b>
 * Languages used in the Chat are English and German.
 * Admin Support will only be in English, German and Russian.
 * items lost to bugs can be restored if the cause is traceable.
@@ -117,8 +107,7 @@ Rules
 * no Admin abuse.
 * no Easymode.
 
-teamspeak and forum
-============
+<b>teamspeak and forum</b>
 * Teamspeak IP/URL: new-wotclan.de
 * Forum URL is: http://www.dayz-epoch.forumo.de
 
@@ -126,7 +115,7 @@ teamspeak and forum
 things marked with (*) are not fully enabled but soon to be implemented.
 
 
-Changelog:
+<b>Changelog:</b>
 
 v0.1	11.12.13
 -vehicles.sqf tuning of spawnvalues/removed vw golf from spawnlist
