@@ -108,3 +108,5 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 [] execVM "Scripts\safearea\base_SafeArea.sqf";
 [] execVM "Scripts\safezone\safezoneposition.sqf";
 [] execVM "Scripts\safezone\safezone.sqf";
+[] execVM "extras\debug_monitor\debug_monitor.sqf";
+[] execVM "extras\debug_monitor1\debug_monitor1.sqf";
