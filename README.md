@@ -12,19 +12,20 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 <b>IP:</b><br/>
 <b>85.131.183.62:2302</b><br/>
 <b>Name:</b><br/>
-[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc
-Testserver1: Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc [GMT-5]
-Testserver2: 5.62.115.87:2302
+<b>[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc</b><br/>
+<b>Testserver1: Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc [GMT-5]</b><br/>
+<b>Testserver2: 5.62.115.87:2302</b>
 
 
 Philosophy
 ============
 more features/realism/balance/places/survival/teamplay
 
-Unique Features:
 
-Missions
+Unique Features:
 ============
+
+<b>Missions</b>
 * available in 3 Tiers Blue/Red/Black.
 * 2-4 appear randomly spread through Chernarus.
 * marked on the map.
