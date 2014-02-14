@@ -100,10 +100,10 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
-[] execVM "R3F_ARTY_AND_LOG\init.sqf"
 [] execVM "ECL\ECLinit.sqf";
 [] execVM "Scripts\safearea\base_SafeArea.sqf";
 [] execVM "Scripts\safezone\safezoneposition.sqf";
 [] execVM "Scripts\safezone\safezone.sqf";
 [] execVM "extras\debug_monitor\debug_monitor.sqf";
 [] execVM "extras\debug_monitor1\debug_monitor1.sqf";
+[] execVM "R3F_ARTY_AND_LOG\init.sqf"
