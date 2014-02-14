@@ -23,7 +23,7 @@ enableSentences false;
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
 // 
-MaxVehicleLimit = 300; // Default = 50
+MaxVehicleLimit = 166; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 18000; // Default = 10000
 
@@ -38,10 +38,15 @@ dayz_sellDistance_air = 40;
 
 dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
-DynamicVehicleDamageLow = 0; // Default: 0
-DynamicVehicleDamageHigh = 100; // Default: 100
+dayz_poleSafeArea = 40; // Generator Zedkillrange
+DynamicVehicleDamageLow = 10; // Default: 0
+DynamicVehicleDamageHigh = 90; // Default: 100
 
-DZE_BuildOnRoads = false; // Default: False
+DZE_BuildOnRoads = true; // Default: False
+DZE_requireplot = 0;
+DZE_BuildingLimit = 600;
+DZE_HeliLift = true;
+DZE_ConfigTrader = false;
 
 ELE_MaxRange = 100; // maximum range the elevator can travel / stop points can be built (in meter)
 ELE_Speed = 5; // speed of the elevator (meters per second)
@@ -93,6 +98,9 @@ if (!isDedicated) then {
 	
 	//Elevator
 	["elevator"] execVM "elevator\elevator_init.sqf";
+
+	//DZAI Radio
+	_nul = [] execVM "DZAI_Client\dzai_initclient.sqf";
 };
 //#include "\z\addons\dayz_code\system\REsec.sqf"
 //Start Dynamic Weather
