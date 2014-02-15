@@ -194,6 +194,8 @@ if (true) then
   _this addmagazineCargoGlobal ["30Rnd_556x45_Stanag",15];
   _this addmagazineCargoGlobal ["5Rnd_762x51_M24",5];
   _this addmagazineCargoGlobal ["30Rnd_762x39_SA58",6];
+  _this addmagazineCargoGlobal ["50Rnd_127x108_KORD",2];
+  _this addmagazineCargoGlobal ["100Rnd_127x99_M2",1];
   _this addbackpackCargoGlobal ["DZ_Backpack_EP1",2];
   _this setDir -37.695862;
   _this setPos [10100.653, 7545.1909, 0.0002822876];
@@ -316,6 +318,10 @@ if (true) then
   _this addmagazineCargoGlobal ["30Rnd_556x45_Stanag",15];
   _this addmagazineCargoGlobal ["5Rnd_127x108_KSVK",5];
   _this addmagazineCargoGlobal ["30Rnd_762x39_SA58",6];
+  _this addmagazineCargoGlobal ["150Rnd_127x108_KORD",3];
+  _this addmagazineCargoGlobal ["100Rnd_127x99_M2",3];
+  _this addmagazineCargoGlobal ["OG9_HE",1];
+  _this addmagazineCargoGlobal ["PG9_AT",1];
   _this addbackpackCargoGlobal ["DZ_Backpack_EP1",2];
   _this setDir 124.87259;
   _this setPos [16376.034, 18368.566, -2.2888184e-005];
