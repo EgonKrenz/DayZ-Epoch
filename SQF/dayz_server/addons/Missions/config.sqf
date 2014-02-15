@@ -114,6 +114,8 @@ mission_dynamic_ai_vehicles = [
 ["AGS_Ins",1],
 ["MK19_TriPod",1],
 ["SPG9_Ins",1],
+["KORD",1],
+["BAF_L2A1_Minitripod_W",1],
 ["SearchLight",2],
 //["AH6X_DZ",1],
 //["AN2_DZ",1],
