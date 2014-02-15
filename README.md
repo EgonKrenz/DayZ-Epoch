@@ -326,12 +326,11 @@ changelog from now on:
 https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 
 
-=======
 --------------------------
 Included Custom Mods and Plugins
 --------------------------
 * R3F Artillery and Logistics - http://www.armaholic.com/page.php?id=9285
-* Take Clothes by - 
+* Take Clothes by Churchie - http://opendayz.net/threads/remove-clothes-from-dead-bodies.12291/
 * Elevator by Axe Cop - https://github.com/vos/dayz
 * DZAI by Buttface - https://github.com/dayzai/DayZBanditAI
 * Missions by Torndeco - https://github.com/Torndeco/Epoch-Missions
