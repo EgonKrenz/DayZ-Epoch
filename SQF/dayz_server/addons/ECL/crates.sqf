@@ -194,7 +194,8 @@ if (true) then
   _this addmagazineCargoGlobal ["30Rnd_556x45_Stanag",15];
   _this addmagazineCargoGlobal ["5Rnd_762x51_M24",5];
   _this addmagazineCargoGlobal ["30Rnd_762x39_SA58",6];
-  _this addmagazineCargoGlobal ["50Rnd_127x108_KORD",2];
+  _this addmagazineCargoGlobal ["50Rnd_127x107_DSHKM",1];
+  _this addmagazineCargoGlobal ["50Rnd_127x108_KORD",1];
   _this addmagazineCargoGlobal ["100Rnd_127x99_M2",1];
   _this addbackpackCargoGlobal ["DZ_Backpack_EP1",2];
   _this setDir -37.695862;
