@@ -62,9 +62,12 @@ Unique Features:
 * removed stary sobor tents.
 * removed some too modern looking and unecessary Vehicles.
 
-<b>Enhanced Crafting System</b>
+<b>Enhanced Crafting and Building System</b>
 * lighttower with great Area.
 * more sandbag Buildings.
+* Mg's, SPG and Granade Launcher on Tripods.
+* Searchlight.
+
 
 <b>Environment</b>
 * Graphical Player Debug Window with Temperature Values Mission Info and lots more: Press F10
@@ -324,6 +327,16 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 
 
 =======
+--------------------------
+Included Custom Mods and Plugins
+--------------------------
+* R3F Artillery and Logistics - http://www.armaholic.com/page.php?id=9285
+* Take Clothes by - 
+* Elevator by Axe Cop - https://github.com/vos/dayz
+* DZAI by Buttface - https://github.com/dayzai/DayZBanditAI
+* Missions by Torndeco - https://github.com/Torndeco/Epoch-Missions
+* ECL Egon's Custom Location's - https://github.com/EgonKrenz/ECL
+
 --------------------------
 Included Custom Islands
 --------------------------
