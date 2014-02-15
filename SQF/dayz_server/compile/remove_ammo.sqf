@@ -39,3 +39,8 @@ if(_classname == "BAF_Jackal2_L2A1_w") then {
 	_vehicle removeMagazinesTurret ["200Rnd_762x51_M240",[0]];
 	_vehicle removeMagazinesTurret ["100Rnd_127x99_M2",[1]];
 };
+
+if(_classname == "SPG9_Ins") then {
+	_vehicle removeMagazinesTurret ["OG9_HE",[-1]];
+	_vehicle removeMagazinesTurret ["PG9_AT",[-1]];
+};
