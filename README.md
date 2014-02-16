@@ -68,27 +68,32 @@ Unique Features:
 * Mg's, SPG and Granade Launcher on Tripods.
 * Searchlight.
 
-
 <b>Environment</b>
+* moving Objects around and putting them into Vehicles, Storage Containers etc.
 * Graphical Player Debug Window with Temperature Values Mission Info and lots more: Press F10
 * snow and cold weather periodically, go find some warm clothes.
 * faster Night means no need for Timezones and all this stuff.
 * fog in some valleys.
 * greatly increased building limit.
-* no building degenaration after time.
-* Elevator that can be build and used to transport players/cars/helis/some objects.	http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/
-* deployed Generators will kill zombies in a 30meter radius. (can be used to build Bases in Zombie infested Areas)
-* towing for towing vehicles on to a Truck.
-* lifting for lifting vehicles that are not player owned and locked or under a roof.
-* cargoing for storing vehicles inside some large planes/helis that are player owned.
+* building lifetime without maintance is set to 360days.
+* deployed Generators will kill zombies in a 40meter radius. (can be used to build Bases in Zombie infested Areas)
 * fastrope use ur imagination.
-* harder enemys and better loot the more north u go.
+* harder enemys and better loot the farther u are away from spawnzones.
 * no selfbloodbag or similar gamebreaker to encourage teamplay and use of food.
 
 <b>Items</b>
-* new Items never seen before in dayz.
+* new Items never seen before in dayz, like:
+* Mg, SPG, Granadelauncher on Tripod.
+* Mortars.
+* custom Vehicles.
 * rare Loot.
 * randomized Loot after every restart.
+
+<b>other addons</b>
+* Elevator that can be build and used to transport players/cars/helis/some objects.	http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/
+* towing for towing vehicles on to a Truck.
+* lifting for lifting vehicles that are not player owned and locked or under a roof.
+* cargoing for storing vehicles inside some large planes/helis that are player owned.
 
 <b>up to date</b>
 * always up to date even going for development files if the work is worth it.
@@ -133,7 +138,7 @@ v0.2	12.12.13
 -sarge ai spawngrid reworked (more bandits)
 -init.sqf
 -dayz minpos -1
-	fnc_usec_selfActions = compile preprocessFileLineNumbers "scripts\fn_selfActions.sqf";
+-fnc_usec_selfActions = compile preprocessFileLineNumbers "scripts\fn_selfActions.sqf";
 -added FastRope/TakeClothes/R3FLogistics
 -added Temp, Location and Restart time in Debug window
 -clean sql database
@@ -178,7 +183,7 @@ v0.6 17.12.13
 -fixed BTC Logistics
 -fixed server restart timer in debug window(again)
 -fixed fog
-	set fog from 2100 to 1100
+-set fog from 2100 to 1100
 -set nightime from 0200 to 0700
 -readded admin debug window
 -added admin tools (phoenix175)
