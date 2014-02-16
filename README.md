@@ -4,11 +4,6 @@
 Modded Epoch Server
 Forked from https://github.com/vbawol/DayZ-Epoch
 
-Changelog:
-
-https://github.com/EgonKrenz/DayZ-Epoch/commits/master
-
-
 <b>IP:</b><br/>
 85.131.183.62:2302<br/>
 <b>Name:</b><br/>
@@ -17,6 +12,11 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
 <b>Testserver2:</b><br/>
 5.62.115.87:2302
+
+Changelog:
+https://github.com/EgonKrenz/DayZ-Epoch/commits/master
+Towing/Lifting/Cargo/Weight List:
+https://github.com/EgonKrenz/DayZ-Epoch/blob/master/Server%20Files/MPMissions/DayZ_Epoch_24.Napf/R3F_ARTY_AND_LOG/R3F_LOG/addons_config/arma2_CO_objects.sqf
 
 
 Philosophy
@@ -75,7 +75,7 @@ Unique Features:
 * faster Night means no need for Timezones and all this stuff.
 * fog in some valleys.
 * greatly increased building limit.
-* building lifetime without maintance is set to 360days.
+* Building Lifetime without Maintance is set to 360days.
 * deployed Generators will kill zombies in a 40meter radius. (can be used to build Bases in Zombie infested Areas)
 * fastrope use ur imagination.
 * harder enemys and better loot the farther u are away from spawnzones.
@@ -91,13 +91,12 @@ Unique Features:
 
 <b>other addons</b>
 * Elevator that can be build and used to transport players/cars/helis/some objects.	http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/
-* towing for towing vehicles on to a Truck.
-* lifting for lifting vehicles that are not player owned and locked or under a roof.
-* cargoing for storing vehicles inside some large planes/helis that are player owned.
+* Towing for towing vehicles on to a Truck.
+* Lifting for lifting vehicles and Objects that are not player owned and locked or under a roof.
+* Logistics for storing Vehicles and Objects inside Cargospace all with realistic weight-table.
 
 <b>up to date</b>
-* always up to date even going for development files if the work is worth it.
-* like making UH13 available pre 1.0.4.0.
+* always up to date.
 * frequently updated changelog and featurelist.
 
 <b>active Admins</b>
@@ -107,7 +106,6 @@ Unique Features:
 * found a bug.
 * found a cheater.
 * Admins can read the Chat even if they are not Ingame.
-* Egon and Leon will quickly fix things depending on the importance.
 
 <b>Rules</b>
 * Languages used in the Chat are English and German.
