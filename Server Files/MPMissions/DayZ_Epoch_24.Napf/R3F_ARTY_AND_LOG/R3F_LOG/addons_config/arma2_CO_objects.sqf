@@ -50,7 +50,6 @@ R3F_LOG_CFG_objets_remorquables = R3F_LOG_CFG_objets_remorquables +
 	"SUV_Base_EP1",
 	"SkodaBase",
 	"TowingTractor",
-	"UAZ_Base",
 	"VWGolf",
 	"Volha_TK_CIV_Base_EP1",
 	"HMMWV_DZ",
@@ -76,10 +75,10 @@ R3F_LOG_CFG_objets_remorquables = R3F_LOG_CFG_objets_remorquables +
  */
 R3F_LOG_CFG_heliporteurs = R3F_LOG_CFG_heliporteurs +
 [
-/*	"CH47_base_EP1",
+	"CH47_base_EP1",
 	"Mi17_base",
 	"Mi24_Base",
-	"UH1H_base",
+/*	"UH1H_base",
 	"UH1_Base",
 	"UH60_Base",
 */	"MV22"
@@ -92,7 +91,7 @@ R3F_LOG_CFG_heliporteurs = R3F_LOG_CFG_heliporteurs +
 R3F_LOG_CFG_objets_heliportables = R3F_LOG_CFG_objets_heliportables +
 [
 	"ReammoBox",
-	"ATV_Base_EP1",
+/*	"ATV_Base_EP1",
 	"HMMWV_Base",
 	"Ikarus_TK_CIV_EP1",
 	"Lada_base",
@@ -122,7 +121,7 @@ R3F_LOG_CFG_objets_heliportables = R3F_LOG_CFG_objets_heliportables +
 	"Boat",
 	"Fishing_Boat",
 	"SeaFox",
-	"Smallboat_1",
+*/	"Smallboat_1",
 	"Land_Misc_Cargo1A_EP1",
 	"Land_Misc_Cargo1B",
 	"Land_Misc_Cargo1B_EP1",
