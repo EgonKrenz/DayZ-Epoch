@@ -8,4 +8,4 @@
  * Pour activer le système d'artillerie, écrivez #define R3F_ARTY_enable sans les deux barres obliques.
  */
 
-//#define R3F_ARTY_enable
+#define R3F_ARTY_enable
