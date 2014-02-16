@@ -19,7 +19,7 @@ if(_classname == "M2HD_mini_TriPod") then {
 	_vehicle removeMagazinesTurret ["100Rnd_127x99_M2",[0]];
 };
 
-if(_classname == "KORD") then {
+if(_classname == "KORD_TK_EP1") then {
 	_vehicle removeMagazinesTurret ["50Rnd_127x108_KORD",[0]];
 };
 
