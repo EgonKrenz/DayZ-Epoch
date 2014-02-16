@@ -14,7 +14,7 @@ Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI
 5.62.115.87:2302
 
 Changelog:
-https://github.com/EgonKrenz/DayZ-Epoch/commits/master
+https://github.com/EgonKrenz/DayZ-Epoch/commits/master<br/>
 Towing/Lifting/Cargo/Weight List:
 https://github.com/EgonKrenz/DayZ-Epoch/blob/master/Server%20Files/MPMissions/DayZ_Epoch_24.Napf/R3F_ARTY_AND_LOG/R3F_LOG/addons_config/arma2_CO_objects.sqf
 
@@ -94,6 +94,7 @@ Unique Features:
 * Towing for towing vehicles on to a Truck.
 * Lifting for lifting vehicles and Objects that are not player owned and locked or under a roof.
 * Logistics for storing Vehicles and Objects inside Cargospace all with realistic weight-table.
+* and more to come...
 
 <b>up to date</b>
 * always up to date.
