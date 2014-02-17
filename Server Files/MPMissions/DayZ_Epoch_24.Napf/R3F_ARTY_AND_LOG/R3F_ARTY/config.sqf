@@ -35,10 +35,10 @@ R3F_ARTY_CFG_autoriser_clic_carte = true;
  * Si la position GPS [0,0] est au coin nord-ouest, la valeur doit être la hauteur de l'île
  * en mètres (c'est-à-dire la largeur de l'île dans l'axe nord-sud).
  */
-//R3F_ARTY_CFG_hauteur_ile = -1; // Takistan
-//R3F_ARTY_CFG_hauteur_ile = -1; // Zargabad
+R3F_ARTY_CFG_hauteur_ile = -1; // Takistan
+//R3F_ARTY_CFG_hauteur_ile = 26000; // Napf?
 //R3F_ARTY_CFG_hauteur_ile = -1; // Desert (from arrowhead)
-R3F_ARTY_CFG_hauteur_ile = 15360; // Chernarus
+//R3F_ARTY_CFG_hauteur_ile = 15360; // Chernarus
 //R3F_ARTY_CFG_hauteur_ile = 5120; // Utes
 //R3F_ARTY_CFG_hauteur_ile = 12800; // Namalsk
 //R3F_ARTY_CFG_hauteur_ile = 20480; // Podagorsk
@@ -104,11 +104,41 @@ if (isClass (configFile >> "CfgVehicles" >> "vil_m109_sph")) then
 	R3F_ARTY_CFG_calculateur_interne = R3F_ARTY_CFG_calculateur_interne + ["vil_m109_sph"];
 };
 
+if (isClass (configFile >> "CfgVehicles" >> "BTR90_HQ_DZE")) then
+{
+	R3F_ARTY_CFG_calculateur_interne = R3F_ARTY_CFG_calculateur_interne + ["BTR90_HQ_DZE"];
+};
+
+if (isClass (configFile >> "CfgVehicles" >> "BRDM2_HQ_TK_GUE_EP1")) then
+{
+	R3F_ARTY_CFG_calculateur_interne = R3F_ARTY_CFG_calculateur_interne + ["BRDM2_HQ_TK_GUE_EP1"];
+};
+
+if (isClass (configFile >> "CfgVehicles" >> "LAV25_HQ_DZE")) then
+{
+	R3F_ARTY_CFG_calculateur_interne = R3F_ARTY_CFG_calculateur_interne + ["LAV25_HQ_DZE"];
+};
+
 /**
  * List of class names of objects which provides an artillery computer from outside. The classes which inherits from the ones listed will be also managed.
  * Liste des noms de classes des objets qui fournissent un calculateur d'artillerie depuis l'extérieur. Les classes dérivant de celles listées seront aussi gérées.
  */
 R3F_ARTY_CFG_calculateur_externe = [];
+
+if (isClass (configFile >> "CfgVehicles" >> "BTR90_HQ_DZE")) then
+{
+	R3F_ARTY_CFG_calculateur_externe = R3F_ARTY_CFG_calculateur_externe + ["BTR90_HQ_DZE"];
+};
+
+if (isClass (configFile >> "CfgVehicles" >> "BRDM2_HQ_TK_GUE_EP1")) then
+{
+	R3F_ARTY_CFG_calculateur_externe = R3F_ARTY_CFG_calculateur_externe + ["BRDM2_HQ_TK_GUE_EP1"];
+};
+
+if (isClass (configFile >> "CfgVehicles" >> "LAV25_HQ_DZE")) then
+{
+	R3F_ARTY_CFG_calculateur_externe = R3F_ARTY_CFG_calculateur_externe + ["LAV25_HQ_DZE"];
+};
 
 /***** ADVANCED CONFIGURATION ABOUT THE BALLISTIC CALCULATIONS (MODIFY IT IS NOT RECOMMANDED) : *****/
 /***** CONFIGURATION AVANCEE CONCERNANT LES CALCULS BALISTIQUES (MODIFICATION NON RECOMMANDEE) : *****/
