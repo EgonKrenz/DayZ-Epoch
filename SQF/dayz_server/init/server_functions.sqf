@@ -332,7 +332,10 @@ spawn_vehicles = {
 			_veh = createVehicle [_vehicle, _position, [], 0, "CAN_COLLIDE"];
 			_veh setdir _dir;
 			_veh setpos _position;	
-			[_vehicle,_veh] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";			
+			[_vehicle,_veh] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";		
+			if(_classname == "SatPhone") then {
+			_this setVehicleInit "nul = [this] execVM ""R3F_ARTY_AND_LOG\create_arty_quarter.sqf"";";
+			};		
 			
 			if(DZEdebug) then {
 				_marker = createMarker [str(_position) , _position];

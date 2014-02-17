@@ -47,7 +47,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=100;
+				items=101;
 				class Item0
 				{
 					position[]={10153.744,0.50311524,-4593.8862};
@@ -1149,6 +1149,16 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+				};
+				class Item100
+				{
+					position[]={10431.247,0.93703842,9310.9209};
+					azimut=418.10101;
+					id=101;
+					side="EMPTY";
+					vehicle="SatPhone";
+					skill=0.60000002;
+					init="nul = [this] execVM ""R3F_ARTY_AND_LOG\create_arty_quarter.sqf"";";
 				};
 			};
 		};
