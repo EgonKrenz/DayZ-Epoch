@@ -433,7 +433,6 @@ R3F_LOG_CFG_objets_deplacables = R3F_LOG_CFG_objets_deplacables +
 	"Land_fort_bagfence_round",
 	"Land_fortified_nest_small",
 	"Land_tent_east",
-	"Land_HBarrier_large",
 	"Land_Toilet",
 	"RoadBarrier_light",
 	"WarfareBunkerSign",
