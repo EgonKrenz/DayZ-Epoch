@@ -109,14 +109,14 @@ mission_patrol_land_vehicles = [
 
 // Type of Vehicles to Spawn @ Missions to Loot
 mission_dynamic_ai_vehicles = [
-["DSHkM_Mini_TriPod",3],
-["M2HD_mini_TriPod",3],
-["AGS_Ins",1],
-["MK19_TriPod",1],
-["SPG9_Ins",1],
-["KORD",1],
-["BAF_L2A1_Minitripod_W",1],
-["SearchLight",6],
+["DSHKM_TK_INS_EP1",5],
+["M2StaticMG_US_EP1",5],
+["AGS_TK_INS_EP1",1],
+["MK19_TriPod_US_EP1",1],
+["SPG9_TK_INS_EP1",1],
+["KORD_high_TK_EP1",1],
+["BAF_L2A1_ACOG_Tripod_W",1],
+["SearchLight",12],
 //["AH6X_DZ",1],
 //["AN2_DZ",1],
 //["ArmoredSUV_PMC_DZE",1],
