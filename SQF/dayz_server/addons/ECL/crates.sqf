@@ -183,6 +183,7 @@ if (true) then
   _this addWeaponCargoGlobal ["BAF_L85A2_RIS_Holo",1];
   _this addWeaponCargoGlobal ["Sa58V_CCO_EP1",1];
   _this addWeaponCargoGlobal ["M40A3",1];
+  _this addWeaponCargoGlobal ["M79_EP1",1];
   _this addmagazineCargoGlobal ["HandGrenade_West",2];
   _this addmagazineCargoGlobal ["200Rnd_556x45_M249",4];
   _this addmagazineCargoGlobal ["100Rnd_762x54_PK",4];
