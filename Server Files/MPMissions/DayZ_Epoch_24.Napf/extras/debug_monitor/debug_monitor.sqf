@@ -54,7 +54,7 @@ while {true} do {
 			round(diag_fps),
 			(dayz_Survived),
 			round(dayz_temperatur),
-			(180-(round(serverTime/60)))
+			(300-(round(serverTime/60)))
 			];
 	};
 	sleep 1;	

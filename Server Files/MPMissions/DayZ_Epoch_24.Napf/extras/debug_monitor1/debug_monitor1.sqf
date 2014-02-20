@@ -74,7 +74,7 @@ while {true} do {
         (round(getDir player)),
          round(dayz_temperatur),
         _textCity,
-        (180-(round(serverTime/60)))
+        (300-(round(serverTime/60)))
 		];
 	};
 	sleep 1;
