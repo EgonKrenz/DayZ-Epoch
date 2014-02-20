@@ -108,6 +108,7 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
+[] execVM "admintools\Activate.sqf";
 [] execVM "ECL\ECLinit.sqf";
 [] execVM "Scripts\safearea\base_SafeArea.sqf";
 [] execVM "Scripts\safezone\safezoneposition.sqf";
