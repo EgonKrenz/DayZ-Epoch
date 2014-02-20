@@ -123,7 +123,7 @@ if (true) then
 _vehicle_9 = objNull;
 if (true) then
 {
-  _this = createVehicle ["LocalBasicWeaponsBox", [4268.2427, 9719.5801, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["LocalBasicWeaponsBox", [4268.2427, 9719.5801, -0.04551002], [], 0, "CAN_COLLIDE"];
   _vehicle_9 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
@@ -135,7 +135,7 @@ if (true) then
   _this setVariable ["permaLoot", true];
 
   _this setDir 28.98477;
-  _this setPos [4268.2427, 9719.5801, 2.2888184e-005];
+  _this setPos [4268.2427, 9719.5801, -0.04551002];
 };
 //T1Hasle
 _vehicle_10 = objNull;
