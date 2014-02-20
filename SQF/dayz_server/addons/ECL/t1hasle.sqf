@@ -435,10 +435,10 @@ if (true) then
 _vehicle_108 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_Ind_BoardsPack1", [4290.8999, 9683.6807], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_Ind_BoardsPack1", [4290.9409, 9683.6885], [], 0, "CAN_COLLIDE"];
   _vehicle_108 = _this;
   _this setDir -70.640259;
-  _this setPos [4290.8999, 9683.6807];
+  _this setPos [4290.9409, 9683.6885];
 };
 
 _vehicle_110 = objNull;
@@ -516,19 +516,19 @@ if (true) then
 _vehicle_150 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_Ind_BoardsPack1", [4308.7148, 9718.1162, 0.00010681152], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_Ind_BoardsPack1", [4308.6563, 9718.1221, 0.00010681152], [], 0, "CAN_COLLIDE"];
   _vehicle_150 = _this;
   _this setDir -71.772812;
-  _this setPos [4308.7148, 9718.1162, 0.00010681152];
+  _this setPos [4308.6563, 9718.1221, 0.00010681152];
 };
 
 _vehicle_152 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_Ind_BoardsPack1", [4311.6885, 9717.2139, 4.5776367e-005], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_Ind_BoardsPack1", [4311.7012, 9717.1387, 4.5776367e-005], [], 0, "CAN_COLLIDE"];
   _vehicle_152 = _this;
   _this setDir -71.772812;
-  _this setPos [4311.6885, 9717.2139, 4.5776367e-005];
+  _this setPos [4311.7012, 9717.1387, 4.5776367e-005];
 };
 
 _vehicle_155 = objNull;
@@ -543,10 +543,10 @@ if (true) then
 _vehicle_158 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Land_Ind_Timbers", [4406.9199, 9666.4277, 0.42721179], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Land_Ind_Timbers", [4406.9199, 9666.4277, -0.32731432], [], 0, "CAN_COLLIDE"];
   _vehicle_158 = _this;
   _this setDir 255.19576;
-  _this setPos [4406.9199, 9666.4277, 0.42721179];
+  _this setPos [4406.9199, 9666.4277, -0.32731432];
 };
 
 _vehicle_161 = objNull;
@@ -655,6 +655,33 @@ if (true) then
   _vehicle_185 = _this;
   _this setDir 200.19966;
   _this setPos [4266.9043, 9700.7119, -1.5258789e-005];
-  PVDZE_serverObjectMonitor set [count PVDZE_serverObjectMonitor,_this];
+  [_this, [200.19966, [4266.9043, 9700.7119, -1.5258789e-005]], Old_moto_TK_Civ_EP1, _spawnDMG, "0"] call server_publishVeh;
+  serverVehicleCounter set [count serverVehicleCounter, Old_moto_TK_Civ_EP1];
+  _this setVariable ["permaLoot", true];
+};
+
+_vehicle_186 = objNull;
+if (true) then
+{
+  _this = createVehicle ["MAP_R2_Boulder1", [4330.9414, 9799.5303, 0.32676205], [], 0, "CAN_COLLIDE"];
+  _vehicle_186 = _this;
+  _this setDir 366.79208;
+  _this setPos [4330.9414, 9799.5303, 0.32676205];
+};
+
+_vehicle_190 = objNull;
+if (true) then
+{
+  _this = createVehicle ["MAP_R2_Stone", [4192.5342, 9755.6875, -2.2888184e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_190 = _this;
+  _this setPos [4192.5342, 9755.6875, -2.2888184e-005];
+};
+
+_vehicle_192 = objNull;
+if (true) then
+{
+  _this = createVehicle ["MAP_R2_Boulder2", [4191.873, 9754.4385, 6.1035156e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_192 = _this;
+  _this setPos [4191.873, 9754.4385, 6.1035156e-005];
 };
 };
