@@ -101,6 +101,84 @@ if (true) then
   _this setPos [14584.655, 10961.736, -0.12864521];
 };
 
+_vehicle_7 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LocalBasicWeaponsBox", [4293.0825, 9707.8604, 0.88346189], [], 0, "CAN_COLLIDE"];
+  _vehicle_7 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this setVariable ["permaLoot", true];
+  _this addWeaponCargoGlobal ["ItemEtool",1];
+  _this addmagazineCargoGlobal ["ItemSandbag",3];
+  _this addmagazineCargoGlobal ["ItemTankTrap",4];
+  _this addmagazineCargoGlobal ["ItemWire",6];
+  _this addmagazineCargoGlobal ["ItemTent",1];
+  _this setDir 186.98204;
+  _this setPos [4293.0825, 9707.8604, 0.88346189];
+};
+
+_vehicle_8 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LocalBasicAmmunitionBox", [4271.8477, 9691.3037, -0.034046091], [], 0, "CAN_COLLIDE"];
+  _vehicle_8 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this setVariable ["permaLoot", true];
+  _this addWeaponCargoGlobal ["MakarovSD",1];
+  _this addWeaponCargoGlobal ["bizon",1];
+  _this addWeaponCargoGlobal ["Saiga12K",1];
+  _this addWeaponCargoGlobal ["ItemMap",1];
+  _this addWeaponCargoGlobal ["ItemCompass",1];
+  _this addmagazineCargoGlobal ["8Rnd_9x18_MakarovSD",3];
+  _this addmagazineCargoGlobal ["64Rnd_9x19_Bizon",3];
+  _this addmagazineCargoGlobal ["8Rnd_B_Saiga12_74Slug",2];
+  _this addmagazineCargoGlobal ["8Rnd_B_Saiga12_Pellets",2];
+  _this setDir 24.067568;
+  _this setPos [4271.8477, 9691.3037, -0.034046091];
+};
+
+_vehicle_9 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LocalBasicWeaponsBox", [4268.2427, 9719.5801, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_9 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this setVariable ["permaLoot", true];
+  _this addWeaponCargoGlobal ["ItemToolbox",2];
+  _this addmagazineCargoGlobal ["PartEngine",1];
+  _this addmagazineCargoGlobal ["PartGeneric",4];
+  _this addmagazineCargoGlobal ["PartWheel",2];
+  _this addmagazineCargoGlobal ["PartFueltank",1];
+  _this addmagazineCargoGlobal ["PartGlass",3];
+  _this addmagazineCargoGlobal ["ItemJerrycan",2];
+  _this setDir 28.98477;
+  _this setPos [4268.2427, 9719.5801, 2.2888184e-005];
+};
+
+_vehicle_10 = objNull;
+if (true) then
+{
+  _this = createVehicle ["GuerillaCacheBox", [4298.8057, 9688.2305, -7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  _vehicle_10 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this setVariable ["permaLoot", true];
+  _this addmagazineCargoGlobal ["FoodCanCorn",6];
+  _this addmagazineCargoGlobal ["ItemSodaLemonade",6];
+  _this addmagazineCargoGlobal ["ItemHeatPack",3];
+  _this addmagazineCargoGlobal ["ItemBandage",5];
+  _this addmagazineCargoGlobal ["ItemPainkiller",3];
+  _this addmagazineCargoGlobal ["ItemMorphine",2];
+  _this addmagazineCargoGlobal ["ItemBloodBag",1];
+  _this addmagazineCargoGlobal ["ItemEpinephrine",2];
+  _this addmagazineCargoGlobal ["ItemAntibiotic",1];
+  _this setDir -147.51707;
+  _this setPos [4298.8057, 9688.2305, -7.6293945e-006];
+};
+
 _vehicle_1227 = objNull;
 if (true) then
 {

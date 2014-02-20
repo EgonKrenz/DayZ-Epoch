@@ -8,6 +8,7 @@ if (isServer) then {
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\crates.sqf";
 //call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\napfsz.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\t1trueb.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\t1hasle.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\t2sachs.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\t3milan.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\ECL\t4neisle.sqf";

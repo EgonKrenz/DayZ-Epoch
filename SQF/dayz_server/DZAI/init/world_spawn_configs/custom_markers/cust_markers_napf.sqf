@@ -66,6 +66,46 @@ _this setMarkerSize [10, 10];
 _this setMarkerDir 270.050;
 DZAI_marker_tier1trueb_medic1 = _this;
 
+// TierIHasle - Main Group
+_this = createMarker ["DZAI_marker_tier1hasle_main", [4290.4248, 9708.4951]];
+_this setMarkerShape "ELLIPSE";
+_this setMarkeralpha 0;
+_this setMarkerType "Flag";
+_this setMarkerBrush "Solid";
+_this setMarkerSize [10, 10];
+_this setMarkerDir 120.050;
+DZAI_marker_tier1hasle_main = _this;
+
+// TierIHasle - veh1 Group
+_this = createMarker ["DZAI_marker_tier1hasle_veh1", [4278.5596, 9697.7969]];
+_this setMarkerShape "ELLIPSE";
+_this setMarkeralpha 0;
+_this setMarkerType "Flag";
+_this setMarkerBrush "Solid";
+_this setMarkerSize [10, 10];
+_this setMarkerDir 270.050;
+DZAI_marker_tier1hasle_veh1 = _this;
+
+// TierIHasle - build1 Group
+_this = createMarker ["DZAI_marker_tier1hasle_build1", [4268.3979, 9725.4023]];
+_this setMarkerShape "ELLIPSE";
+_this setMarkeralpha 0;
+_this setMarkerType "Flag";
+_this setMarkerBrush "Solid";
+_this setMarkerSize [10, 10];
+_this setMarkerDir 270.050;
+DZAI_marker_tier1hasle_build1 = _this;
+
+// TierIHasle - medic1 Group
+_this = createMarker ["DZAI_marker_tier1hasle_medic1", [4296.3438, 9692.21]];
+_this setMarkerShape "ELLIPSE";
+_this setMarkeralpha 0;
+_this setMarkerType "Flag";
+_this setMarkerBrush "Solid";
+_this setMarkerSize [10, 10];
+_this setMarkerDir 270.050;
+DZAI_marker_tier1hasle_medic1 = _this;
+
 // TierIISachs - Main Group
 _this = createMarker ["DZAI_marker_tier2sachs_main", [14606.069, 10984.297]];
 _this setMarkerShape "ELLIPSE";
@@ -247,7 +287,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier3milan_build1 = _this;
 
 // TierIII Milan - prox1 Group
-_this = createMarker ["DZAI_marker_tier3milan_prox1", [10092.709, 7795.1543]];
+_this = createMarker ["DZAI_marker_tier3milan_prox1", [9911.9746, 7682.9497]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";

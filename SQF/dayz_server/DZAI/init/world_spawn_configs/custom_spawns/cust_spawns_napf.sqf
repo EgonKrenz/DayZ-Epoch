@@ -29,14 +29,14 @@
 //tier I Trueb
 	[
 		"DZAI_marker_tier1trueb_main",	//This is the marker name to be used as the patrol and spawning area.
-		5, 						//This trigger will spawn a group of 2 AI units.
+		3, 						//This trigger will spawn a group of 2 AI units.
 		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier1trueb_veh1",	//This is the marker name to be used as the patrol and spawning area.
-		2, 						//This trigger will spawn a group of 2 AI units.
+		3, 						//This trigger will spawn a group of 2 AI units.
 		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
@@ -56,30 +56,58 @@
 	] call DZAI_spawn;
 
 	[
+		"DZAI_marker_tier1hasle_main",	//This is the marker name to be used as the patrol and spawning area.
+		3, 						//This trigger will spawn a group of 2 AI units.
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
+	] call DZAI_spawn;
+	
+	[
+		"DZAI_marker_tier1hasle_veh1",	//This is the marker name to be used as the patrol and spawning area.
+		3, 						//This trigger will spawn a group of 2 AI units.
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
+	] call DZAI_spawn;
+	
+	[
+		"DZAI_marker_tier1hasle_build1",	//This is the marker name to be used as the patrol and spawning area.
+		3, 						//This trigger will spawn a group of 2 AI units.
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
+	] call DZAI_spawn;
+	
+	[
+		"DZAI_marker_tier1hasle_medic1",	//This is the marker name to be used as the patrol and spawning area.
+		3, 						//This trigger will spawn a group of 2 AI units.
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
+	] call DZAI_spawn;
+
+	[
 		"DZAI_marker_tier2sachs_main",	//This is the marker name to be used as the patrol and spawning area.
-		5, 						//This trigger will spawn a group of 2 AI units.
-		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		6, 						//This trigger will spawn a group of 2 AI units.
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier2sachs_veh1",	//This is the marker name to be used as the patrol and spawning area.
 		3, 						//This trigger will spawn a group of 2 AI units.
-		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier2sachs_build1",	//This is the marker name to be used as the patrol and spawning area.
 		3, 						//This trigger will spawn a group of 2 AI units.
-		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier2sachs_medic1",	//This is the marker name to be used as the patrol and spawning area.
 		3, 						//This trigger will spawn a group of 2 AI units.
-		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		0,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
@@ -163,34 +191,34 @@
 	[
 		"DZAI_marker_tier3milan_main1",	//This is the marker name to be used as the patrol and spawning area.
 		12, 						//This trigger will spawn a group of 2 AI units.
-		2,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier3milan_veh1",	//This is the marker name to be used as the patrol and spawning area.
 		4, 						//This trigger will spawn a group of 2 AI units.
-		2,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier3milan_build1",	//This is the marker name to be used as the patrol and spawning area.
 		4, 						//This trigger will spawn a group of 2 AI units.
-		2,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier3milan_prox1",	//This is the marker name to be used as the patrol and spawning area.
 		4, 						//This trigger will spawn a group of 2 AI units.
-		2,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
 	
 	[
 		"DZAI_marker_tier3milan_prox2",	//This is the marker name to be used as the patrol and spawning area.
 		4, 						//This trigger will spawn a group of 2 AI units.
-		2,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
+		1,						//AI spawned by this trigger will have Weapon Grade level 1 (see below for explanation of Weapon Grade)
 		false					//(OPTIONAL) Respawn setting. True: AI spawned will respawn. False: AI will not respawn. See more here: http://opendayz.net/threads/release-dzai-lite-dynamic-ai-package.11116/page-28#post-79148
 	] call DZAI_spawn;
