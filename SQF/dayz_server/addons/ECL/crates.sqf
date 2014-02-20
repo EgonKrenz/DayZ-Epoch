@@ -79,50 +79,12 @@ if (true) then
   _this setPos [7760.8125, 14805.721, -0.11913096];
   _this
 };
-//tier I Trueb
-_vehicle_1226 = objNull;
-if (true) then
-{
-  _this = createVehicle ["LocalBasicWeaponsBox", [14584.655, 10961.736, -0.12864521], [], 0, "CAN_COLLIDE"];
-  _vehicle_1226 = _this;
-  clearweaponcargoGlobal _this;
-  clearmagazinecargoGlobal _this;
-  _this setVariable ["permaLoot", true];
-  _this addmagazineCargoGlobal ["FoodCanCorn",6];
-  _this addmagazineCargoGlobal ["ItemSodaLemonade",6];
-  _this addmagazineCargoGlobal ["ItemHeatPack",3];
-  _this addmagazineCargoGlobal ["ItemBandage",5];
-  _this addmagazineCargoGlobal ["ItemPainkiller",3];
-  _this addmagazineCargoGlobal ["ItemMorphine",2];
-  _this addmagazineCargoGlobal ["ItemBloodBag",1];
-  _this addmagazineCargoGlobal ["ItemEpinephrine",2];
-  _this addmagazineCargoGlobal ["ItemAntibiotic",1];
-  _this setDir 1124.5096;
-  _this setPos [14584.655, 10961.736, -0.12864521];
-};
-
+//T1Hasle
 _vehicle_7 = objNull;
 if (true) then
 {
   _this = createVehicle ["LocalBasicWeaponsBox", [4293.0825, 9707.8604, 0.88346189], [], 0, "CAN_COLLIDE"];
   _vehicle_7 = _this;
-  clearweaponcargoGlobal _this;
-  clearmagazinecargoGlobal _this;
-  _this setVariable ["permaLoot", true];
-  _this addWeaponCargoGlobal ["ItemEtool",1];
-  _this addmagazineCargoGlobal ["ItemSandbag",3];
-  _this addmagazineCargoGlobal ["ItemTankTrap",4];
-  _this addmagazineCargoGlobal ["ItemWire",6];
-  _this addmagazineCargoGlobal ["ItemTent",1];
-  _this setDir 186.98204;
-  _this setPos [4293.0825, 9707.8604, 0.88346189];
-};
-
-_vehicle_8 = objNull;
-if (true) then
-{
-  _this = createVehicle ["LocalBasicAmmunitionBox", [4271.8477, 9691.3037, -0.034046091], [], 0, "CAN_COLLIDE"];
-  _vehicle_8 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
   _this setVariable ["permaLoot", true];
@@ -135,15 +97,15 @@ if (true) then
   _this addmagazineCargoGlobal ["64Rnd_9x19_Bizon",3];
   _this addmagazineCargoGlobal ["8Rnd_B_Saiga12_74Slug",2];
   _this addmagazineCargoGlobal ["8Rnd_B_Saiga12_Pellets",2];
-  _this setDir 24.067568;
-  _this setPos [4271.8477, 9691.3037, -0.034046091];
+  _this setDir 186.98204;
+  _this setPos [4293.0825, 9707.8604, 0.88346189];
 };
-
-_vehicle_9 = objNull;
+//T1Hasle
+_vehicle_8 = objNull;
 if (true) then
 {
-  _this = createVehicle ["LocalBasicWeaponsBox", [4268.2427, 9719.5801, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_9 = _this;
+  _this = createVehicle ["LocalBasicAmmunitionBox", [4271.8477, 9691.3037, -0.034046091], [], 0, "CAN_COLLIDE"];
+  _vehicle_8 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
   _this setVariable ["permaLoot", true];
@@ -154,10 +116,28 @@ if (true) then
   _this addmagazineCargoGlobal ["PartFueltank",1];
   _this addmagazineCargoGlobal ["PartGlass",3];
   _this addmagazineCargoGlobal ["ItemJerrycan",2];
+  _this setDir 24.067568;
+  _this setPos [4271.8477, 9691.3037, -0.034046091];
+};
+//T1Hasle
+_vehicle_9 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LocalBasicWeaponsBox", [4268.2427, 9719.5801, 2.2888184e-005], [], 0, "CAN_COLLIDE"];
+  _vehicle_9 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this addWeaponCargoGlobal ["ItemEtool",1];
+  _this addmagazineCargoGlobal ["ItemSandbag",3];
+  _this addmagazineCargoGlobal ["ItemTankTrap",4];
+  _this addmagazineCargoGlobal ["ItemWire",6];
+  _this addmagazineCargoGlobal ["ItemTent",1];
+  _this setVariable ["permaLoot", true];
+
   _this setDir 28.98477;
   _this setPos [4268.2427, 9719.5801, 2.2888184e-005];
 };
-
+//T1Hasle
 _vehicle_10 = objNull;
 if (true) then
 {
@@ -178,7 +158,28 @@ if (true) then
   _this setDir -147.51707;
   _this setPos [4298.8057, 9688.2305, -7.6293945e-006];
 };
-
+//T2Sachs
+_vehicle_1226 = objNull;
+if (true) then
+{
+  _this = createVehicle ["LocalBasicWeaponsBox", [14584.655, 10961.736, -0.12864521], [], 0, "CAN_COLLIDE"];
+  _vehicle_1226 = _this;
+  clearweaponcargoGlobal _this;
+  clearmagazinecargoGlobal _this;
+  _this setVariable ["permaLoot", true];
+  _this addmagazineCargoGlobal ["FoodCanCorn",6];
+  _this addmagazineCargoGlobal ["ItemSodaLemonade",6];
+  _this addmagazineCargoGlobal ["ItemHeatPack",3];
+  _this addmagazineCargoGlobal ["ItemBandage",5];
+  _this addmagazineCargoGlobal ["ItemPainkiller",3];
+  _this addmagazineCargoGlobal ["ItemMorphine",2];
+  _this addmagazineCargoGlobal ["ItemBloodBag",1];
+  _this addmagazineCargoGlobal ["ItemEpinephrine",2];
+  _this addmagazineCargoGlobal ["ItemAntibiotic",1];
+  _this setDir 1124.5096;
+  _this setPos [14584.655, 10961.736, -0.12864521];
+};
+//T2Sachs
 _vehicle_1227 = objNull;
 if (true) then
 {
@@ -199,7 +200,7 @@ if (true) then
   _this setDir 1306.2577;
   _this setPos [14588.252, 10986.457, 2.7388575];
 };
-
+//T2Sachs
 _vehicle_1228 = objNull;
 if (true) then
 {
@@ -218,7 +219,7 @@ if (true) then
   _this setDir 1395.9489;
   _this setPos [14649.771, 10962.963, -0.051489435];
 };
-
+//T2Sachs
 _vehicle_1229 = objNull;
 if (true) then
 {
