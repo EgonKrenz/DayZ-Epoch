@@ -189,13 +189,13 @@ if (true) then
   clearmagazinecargoGlobal _this;
   _this setVariable ["permaLoot", true];
   _this addWeaponCargoGlobal ["RPK_74",1];
-  _this addWeaponCargoGlobal ["AK_107_GL_Kobra",1];
+  _this addWeaponCargoGlobal ["AK_47_M",1];
   _this addWeaponCargoGlobal ["SVD",1];
   _this addWeaponCargoGlobal ["ItemMap",1];
   _this addWeaponCargoGlobal ["ItemCompass",1];
   _this addWeaponCargoGlobal ["ItemRadio",1];
   _this addmagazineCargoGlobal ["75Rnd_545x39_RPK",3];
-  _this addmagazineCargoGlobal ["30Rnd_545x39_AK",3];
+  _this addmagazineCargoGlobal ["30Rnd_762x39_AK47",3];
   _this addmagazineCargoGlobal ["10Rnd_762x54_SVD",3];
   _this setDir 1306.2577;
   _this setPos [14588.252, 10986.457, 2.7388575];
