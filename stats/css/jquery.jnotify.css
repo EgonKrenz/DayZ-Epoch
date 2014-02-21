@@ -1,0 +1,65 @@
+#jnotify-stack {
+    margin: 5px 20% 0 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 50%;
+    font-size: 12px;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    z-index: 10000;
+}
+
+.jnotify {
+    font: 11px "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+    text-align: left;
+    border: #000000 1px solid;
+    padding: 4px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px 5px 5px 23px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: none 3px 5px no-repeat;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.jnotify .close {
+    height: 16px;
+    width: 16px;
+    float: right;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    background-position: top right;
+    background-image: url();
+}
+
+.jnotify-notice {
+    background-image: url(../images/icons/info.png);
+    border-color: #76A0CD;
+    color: #1A5799;
+    background-color: #EAF2F9;
+}
+
+.jnotify-success {
+    background-image: url(../images/icons/success.png);
+    border-color: #8FA350;
+    color: #5F6C35;
+    background-color: #E0E6CD;
+}
+
+.jnotify-warning {
+    background-image: url(../images/icons/warning.png);
+    border-color: #D26D19;
+    color: #8C4810;
+    background-color: #F6D5B9;
+}
+
+.jnotify-error {
+    background-image: url(../images/icons/error.png);
+    border-color: #BE3825;
+    color: #B81900;
+    background-color: #F1C0BA;
+}
