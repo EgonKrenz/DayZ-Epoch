@@ -49,7 +49,7 @@ DZE_HeliLift = true;
 DZE_ConfigTrader = false;
 
 ELE_MaxRange = 100; // maximum range the elevator can travel / stop points can be built (in meter)
-ELE_Speed = 5; // speed of the elevator (meters per second)
+ELE_Speed = 2; // speed of the elevator (meters per second)
 ELE_StopWaitTime = 0; // disable the wait time if you call the elevator
 
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
