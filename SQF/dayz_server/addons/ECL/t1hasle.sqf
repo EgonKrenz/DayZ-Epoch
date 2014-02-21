@@ -648,18 +648,6 @@ if (true) then
   _this setPos [4252.6216, 9732.8408];
 };
 
-_vehicle_185 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Old_moto_TK_Civ_EP1", [4266.9043, 9700.7119, -1.5258789e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_185 = _this;
-  _this setDir 200.19966;
-  _this setPos [4266.9043, 9700.7119, -1.5258789e-005];
-  [_this, [200.19966, [4266.9043, 9700.7119, -1.5258789e-005]], Old_moto_TK_Civ_EP1, _spawnDMG, "0"] call server_publishVeh;
-  serverVehicleCounter set [count serverVehicleCounter, Old_moto_TK_Civ_EP1];
-  _this setVariable ["permaLoot", true];
-};
-
 _vehicle_186 = objNull;
 if (true) then
 {

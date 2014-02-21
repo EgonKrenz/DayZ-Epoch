@@ -1767,17 +1767,4 @@ if (true) then
   _this setDir 62.192898;
   _this setPos [9876.1719, 7711.0747, -3.8146973e-005];
 };
-
-_vehicle_2832 = objNull;
-if (true) then
-{
-  _this = createVehicle ["Offroad_DSHKM_Gue_DZ", [10079.447, 7550.5737, 3.0517578e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_2832 = _this;
-  	clearWeaponCargoGlobal _vehicle;
-	clearMagazineCargoGlobal _vehicle;
-  _this setDir -52.154938;
-  _this setPos [10079.447, 7550.5737, 3.0517578e-005];
-  [_this, [-52.154938, [10079.447, 7550.5737, 3.0517578e-005]], Offroad_DSHKM_Gue_DZ, _spawnDMG, "0"] call server_publishVeh;
-  serverVehicleCounter set [count serverVehicleCounter, _vehicle_class];
-};
 };
