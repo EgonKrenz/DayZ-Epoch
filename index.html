@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dayz-epoch : Experimental DayZ Mod" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dayz-epoch</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/EgonKrenz/DayZ-Epoch">View on GitHub</a>
+
+          <h1 id="project_title">Dayz-epoch</h1>
+          <h2 id="project_tagline">Experimental DayZ Mod</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/EgonKrenz/DayZ-Epoch/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/EgonKrenz/DayZ-Epoch/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="ecs-egons-custom-servermod" class="anchor" href="#ecs-egons-custom-servermod"><span class="octicon octicon-link"></span></a><strong>ECS Egon's Custom Servermod</strong>
+</h1>
+
+<p>Modded Epoch Server
+Forked from <a href="https://github.com/vbawol/DayZ-Epoch">https://github.com/vbawol/DayZ-Epoch</a></p>
+
+<p><b>IP:</b><br>
+85.131.183.62:2302<br><b>Name:</b><br>
+[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br><b>Testserver1:</b><br>
+Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br><b>Testserver2:</b><br>
+5.62.115.87:2302</p>
+
+<p>Changelog:
+<a href="https://github.com/EgonKrenz/DayZ-Epoch/commits/master">https://github.com/EgonKrenz/DayZ-Epoch/commits/master</a><br>
+Towing/Lifting/Cargo/Weight List:
+<a href="https://github.com/EgonKrenz/DayZ-Epoch/blob/master/Server%20Files/MPMissions/DayZ_Epoch_24.Napf/R3F_ARTY_AND_LOG/R3F_LOG/addons_config/arma2_CO_objects.sqf">https://github.com/EgonKrenz/DayZ-Epoch/blob/master/Server%20Files/MPMissions/DayZ_Epoch_24.Napf/R3F_ARTY_AND_LOG/R3F_LOG/addons_config/arma2_CO_objects.sqf</a></p>
+
+<h1>
+<a name="philosophy" class="anchor" href="#philosophy"><span class="octicon octicon-link"></span></a>Philosophy</h1>
+
+<p><b>more features/realism/balance/places/survival/teamplay</b></p>
+
+<h1>
+<a name="unique-features" class="anchor" href="#unique-features"><span class="octicon octicon-link"></span></a>Unique Features:</h1>
+
+<p><b>Missions</b></p>
+
+<ul>
+<li>available in 3 Tiers Blue/Red/Black.</li>
+<li>2-4 appear randomly spread through Chernarus.</li>
+<li>marked on the map.</li>
+<li>advertized Graphicaly through Debug Window Press:F10.</li>
+<li>randomized loot.</li>
+</ul><p><b>unique Locations</b></p>
+
+<ul>
+<li>available in 4 Tiers Green/Blue/Red/Black.</li>
+<li>created only for this Server.</li>
+<li>spread through Chernarus and Napf.</li>
+<li>marked on the map.</li>
+<li>are defended by DZAI.</li>
+<li>getting harder the further u are away from spawn places.</li>
+<li>randomized and customized loot after every restart.</li>
+</ul><p><b>AI</b></p>
+
+<ul>
+<li>spawns at points of interest like bigger citys and Millitary Bases.</li>
+<li>spawns randomly near players be on the watch even if u r just Choppin Wood. (will be removed if server is populated enough)</li>
+<li>has random loot and gets better with higher ai levels.</li>
+<li>also always take a Radio with u! u can be warned of pursuing ai by placing a radio on the toolbelt.</li>
+</ul><p><b>Events</b></p>
+
+<ul>
+<li>events will be held by the admins if playercount is over 10.</li>
+<li>there will be a special Target like: Break into a Admin Base.</li>
+<li>winners will be rewarded with loot that can be very rare or only obtainable through those events.</li>
+</ul><p><b>Balancing</b></p>
+
+<ul>
+<li>closer to the DayZ Experience.</li>
+<li>less Vehicle Spawns but more value --&gt; more exitement.</li>
+<li>Vendor Prices tweaked.</li>
+<li>added more Vehicles.</li>
+<li>removed stary sobor tents.</li>
+<li>removed some too modern looking and unecessary Vehicles.</li>
+</ul><p><b>Enhanced Crafting and Building System</b></p>
+
+<ul>
+<li>lighttower with great Area.</li>
+<li>more sandbag Buildings.</li>
+<li>Mg's, SPG and Granade Launcher on Tripods.</li>
+<li>Searchlight.</li>
+</ul><p><b>Environment</b></p>
+
+<ul>
+<li>moving Objects around and putting them into Vehicles, Storage Containers etc.</li>
+<li>Graphical Player Debug Window with Temperature Values Mission Info and lots more: Press F10</li>
+<li>snow and cold weather periodically, go find some warm clothes.</li>
+<li>faster Night means no need for Timezones and all this stuff.</li>
+<li>fog in some valleys.</li>
+<li>greatly increased building limit.</li>
+<li>Building Lifetime without Maintance is set to 360days.</li>
+<li>deployed Generators will kill zombies in a 40meter radius. (can be used to build Bases in Zombie infested Areas)</li>
+<li>fastrope use ur imagination.</li>
+<li>harder enemys and better loot the farther u are away from spawnzones.</li>
+<li>no selfbloodbag or similar gamebreaker to encourage teamplay and use of food.</li>
+</ul><p><b>Items</b></p>
+
+<ul>
+<li>new Items never seen before in dayz, like:</li>
+<li>Mg, SPG, Granadelauncher on Tripod.</li>
+<li>Mortars.</li>
+<li>custom Vehicles.</li>
+<li>rare Loot.</li>
+<li>randomized Loot after every restart.</li>
+</ul><p><b>other addons</b></p>
+
+<ul>
+<li>Elevator that can be build and used to transport players/cars/helis/some objects. <a href="http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/">http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/</a>
+</li>
+<li>Towing for towing vehicles on to a Truck.</li>
+<li>Lifting for lifting vehicles and Objects that are not player owned and locked or under a roof.</li>
+<li>Logistics for storing Vehicles and Objects inside Cargospace all with realistic weight-table.</li>
+<li>and more to come...</li>
+</ul><p><b>up to date</b></p>
+
+<ul>
+<li>always up to date.</li>
+<li>frequently updated changelog and featurelist.</li>
+</ul><p><b>active Admins</b></p>
+
+<ul>
+<li>just ask Admins ingame if u:</li>
+<li>have a problem.</li>
+<li>have a proposal for a new Feature.</li>
+<li>found a bug.</li>
+<li>found a cheater.</li>
+<li>Admins can read the Chat even if they are not Ingame.</li>
+</ul><p><b>Rules</b></p>
+
+<ul>
+<li>Languages used in the Chat are English and German.</li>
+<li>Admin Support will only be in English, German and Russian.</li>
+<li>items lost to bugs can be restored if the cause is traceable.</li>
+<li>no Adminabuse.</li>
+<li>no Easymode.</li>
+</ul><p><b>teamspeak and forum</b></p>
+
+<ul>
+<li>Teamspeak IP/URL: new-wotclan.de</li>
+<li>Forum URL is: <a href="http://www.dayz-epoch.forumo.de">http://www.dayz-epoch.forumo.de</a>
+</li>
+</ul><p>things marked with (*) are not fully enabled but soon to be implemented.</p>
+
+<p><b>Changelog:</b>(old pre 1.1.0)</p>
+
+<p>v0.1    11.12.13
+-vehicles.sqf tuning of spawnvalues/removed vw golf from spawnlist
+-implemented sar-config.sqf from fnsector
+-int/serverfunctions.sqf lootcleanup workauround for mission loot disappearing</p>
+
+<p>v0.2    12.12.13
+-set gmt+4
+-added sectorfng
+-added sectorfng sarge ai
+-sarge ai spawngrid reworked (more bandits)
+-init.sqf
+-dayz minpos -1
+-fnc_usec_selfActions = compile preprocessFileLineNumbers "scripts\fn_selfActions.sqf";
+-added FastRope/TakeClothes/R3FLogistics
+-added Temp, Location and Restart time in Debug window
+-clean sql database
+-reworked trader prices(helix3,armedcarsx5)/stock (armed0)
+-lowered spawnrate of vehicles(/10) and air(/5)
+-set vehicle spawnmax to 66</p>
+
+<p>v0.3    13/14.12.13
+-set gmt -3
+-further trader balancing
+-disabled ai marker on map
+-removed .paa picture 3484kb -&gt; 1468kb
+-reworked ai spawn probability (added Soldier,lowered Survivor)
+-added flares to spawngear
+-dayz minpos -16000
+-removed golf from trade stock
+-missions fork test:
+-no ai spawn 100m around plotpole
+-New Sarge Group "Bandit Missions", this will allow server admins to make mission ai wear different skins or have different loadouts from wandering AI.
+-random epoch loot</p>
+
+<p>v0.4 15.12.13
+-removed sarge ai map marker
+-fixed custom monitor servertime / online players
+-added custom monitor temp / dayz survived
+-further trader balancing (almost done)
+-added combo lock to trader Kelm(60g)</p>
+
+<p>v0.5 16.12.13
+-updated epoch to 1.0.3.1
+-updatet missions to 1.0.3.1 (incl. new missions)
+-added fog
+-?fixed custom monitor servertime / dayz survived
+-?disabled r3f lifting
+-added BTC Logistics
+-added login logo back
+-mission.pbo cleanup 1468 -&gt; 892kb
+-removed junk code in serverfunctions.sqf</p>
+
+<p>v0.6 17.12.13
+-fixed start gear +RoadFlare (again)
+-fixed BTC Logistics
+-fixed server restart timer in debug window(again)
+-fixed fog
+-set fog from 2100 to 1100
+-set nightime from 0200 to 0700
+-readded admin debug window
+-added admin tools (phoenix175)
+-added Base Destruction Script to admin tools
+-removed Plot requirement(DZE_requireplot = 0;) needs testing!!!
+-disabled r3f lifting (adain)
+-removed CEG leftovers in desription.ext</p>
+
+<p>v0.7 18/19.12.13
+-added elevator     <a href="http://dayzepoch.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/">http://dayzepoch.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/</a>
+-generator repells zombies now (30m)
+-removed fog was async
+-set servertime +1
+-finetuning admin debug window
+-added generate key script to admin tools
+-added  dayz_dawn = 6;
+        dayz_dusk = 23;
+-workaround for DZE_requireplot = 0; tested
+-loading variables from mpmissions/fixes
+-fixed handroadflare (again)
+-added Cargo Drop for ch47 and mv-22</p>
+
+<p>v0.8 20-25.12.13
+-fixed hmmv prices
+-updated: missions
+-added DZAI
+-removed sarge ai grid spawns</p>
+
+<p>v0.9 05-06.01.14
+-removed ch47 from mission loot
+-added more armed vehicles to patrol
+-fixed pipebomb price (B:6 S:3)
+-added Jackal and Bell UH13 to dynamic_vehicle.sqf
+-added Jackal to hero and Bandit vendor (B:6 S:3)
+-added Bell UH13 transport to hero bandit and air vendor
+-added Bell UH13 amvibious air vendor
+-added Jackal and Bell to dynamic_vehicle.sqf
+-lowered sandsack price
+-AN2 moved to medium capacity cargo (cargodrop)
+-price tuning: vodnik, armoredSUV
+-fixed admin monitor (again)
+-temporarly disabled sector fng
+-tuned vehicle spawnchance
+-updated DZAI to 1.9.3
+-added new mission system
+-fixed f10 keypress</p>
+
+<p>v1.0 08-16.01.14
+-removed static npc spawn near spawn areas
+-removed dynamic npc spawn around players
+-patrols rpg and demount fix
+-updated DZAI to 1.9.4
+-fixed AI Ground Patrols
+-fixed typos/changed Sever description from:German [NEW] DayZ Epoch Chern.(v.1.0.3.1 /103718) Sektor FNG | Sarge AI | MIssion | Zeit:-5 und mehr
+ to DayZ Epoch(1.0.3.1) Chernarus [NEW] Highly Customized/balanced |active Admins|Sektor FNG|Sarge+DZAI|Missions|Elevator|etc (1.0.3.1 /103718)[GMT-5] 
+-downgraded sector FNG to working state
+-changed MotD
+-set MaxVehicleLimit = 166;
+-reworked dynamic_vehicle.sgf
+-removed mission vehicle spawns
+-added heli patrols (2)
+-inreased land patrols to 5
+-changed dead ai cleanup from 5 to 10 minutes</p>
+
+<p>v1.0.1 17.01.14
+-added Merlin to AircraftTrader ["BAF_Merlin_HC3_w",2],
+-added BRDM HQ to BanditTrader  ["BRDM2_HQ_TK_GUE_EP1",2],
+-added BTR40 to BanditTrader    ["BTR40_MG_TK_INS_EP1",4],
+-price balancing</p>
+
+<p>v1.0.2  18-20.01.14
+-created Feature/Rules/ToDo/KnownBugsList
+-removed merlin
+-removed air patrols
+-reversed npc cleanup delay 600s -&gt; 300s
+-updated DZAI to 1.9.5
+-added back dynamic and static ai spawn
+-removed ai location spawns around spawn zones
+-removed sarge ai
+-added dzai spawns for sector fng to replace sarge (tested)
+-added first custom Buildings to map</p>
+
+<p>v1.0.3 21.01.14
+-removed sarge ai leftover files
+-created first custom location TierIZele (low difficulty/loot)
+-added color code green|blue|red|black (tier 1 to 4)
+-added/changed location marker
+-added DZAI tier 0 ai to TierIZele
+-updated DZAI to 1.9.5.1 hotfix
+-added 1 heli patrol
+-balanced sector fng loot</p>
+
+<p>v1.0.4 22.01.14
+-added loot to TierIZele
+-TierIZele finetuning (added 2 tier 1 units/marker/objects etc)
+-removed clutter
+-fixed sector fng loot boxes disapearing
+-changed dayz_fullMoonNights = true;
+-added new TierI location TierIFactory
+-updated Featurelist/Rules
+-added wood/cinder/mortar to building loot (ECL and Sector FNG)
+-more loot balancing (ECL and Sector FNG)
+-removed stary tents
+-added back some vehicle spawns to missions
+-changed DZAI_respawnTimeMin = 1800;DZAI_respawnTimeMax = 3600; (from 300;600)</p>
+
+<p>v1.0.5 23-24.01.14
+-added new Tier I Location TierIPusta
+-added first Tier II Location TierIIPulkowo
+-added generators to TierIFactory
+-changed Admin UIDs for Admin tools/debug window
+-loot balancing</p>
+
+<p>v1.0.6 25-26.01.14
+-some location updates</p>
+
+<p>v1.0.7 31.01-01.02.14
+-updated to epoch 1.0.4
+-started working on napf
+-updated DZAI to 1.9.6.1
+-linked player data from both server
+-fixed some errors from log file
+napf:
+-removed air patrol
+-reduced vehicle patrol from 5 to 4
+-changed napf server description
+-cleaned map of too much spawns
+-added dynamic_vehicle.sgf from chernarus
+-removed ECL/Cargo/Lift</p>
+
+<p>v1.0.8 02-03.02.14
+-moved projects to Github <a href="https://github.com/EgonKrenz">https://github.com/EgonKrenz</a>
+napf:
+-added BAF_Merlin_DZE to aircraft trader and spawnlist (B:6 S:3)
+-price tuning
+-fixed private hive tools
+-fixed server restart
+-fixed missions not spawning
+-fixed Sheduler.xml/server.cfg
+-fixed lifting: CH47 only, can now lift air!
+-lowered pipebomb price
+-this setVectorUp [0,0,1];</p>
+
+<p>changelog from now on:
+<a href="https://github.com/EgonKrenz/DayZ-Epoch/commits/master">https://github.com/EgonKrenz/DayZ-Epoch/commits/master</a></p>
+
+<hr><h2>
+<a name="included-custom-mods-and-plugins" class="anchor" href="#included-custom-mods-and-plugins"><span class="octicon octicon-link"></span></a>Included Custom Mods and Plugins</h2>
+
+<ul>
+<li>R3F Artillery and Logistics - <a href="http://www.armaholic.com/page.php?id=9285">http://www.armaholic.com/page.php?id=9285</a>
+</li>
+<li>Take Clothes by Churchie - <a href="http://opendayz.net/threads/remove-clothes-from-dead-bodies.12291/">http://opendayz.net/threads/remove-clothes-from-dead-bodies.12291/</a>
+</li>
+<li>Elevator by Axe Cop - <a href="https://github.com/vos/dayz">https://github.com/vos/dayz</a>
+</li>
+<li>DZAI by Buttface - <a href="https://github.com/dayzai/DayZBanditAI">https://github.com/dayzai/DayZBanditAI</a>
+</li>
+<li>Missions by Torndeco - <a href="https://github.com/Torndeco/Epoch-Missions">https://github.com/Torndeco/Epoch-Missions</a>
+</li>
+<li>ECL Egon's Custom Location's - <a href="https://github.com/EgonKrenz/ECL">https://github.com/EgonKrenz/ECL</a>
+</li>
+</ul><hr><h2>
+<a name="included-custom-islands" class="anchor" href="#included-custom-islands"><span class="octicon octicon-link"></span></a>Included Custom Islands</h2>
+
+<ul>
+<li>Sauerland by Falconsan - <a href="http://www.s6computer.de/">http://www.s6computer.de/</a>
+</li>
+<li>Napf Island by #momo# - <a href="http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta">http://forums.bistudio.com/showthread.php?136469-Napf-Island-beta</a>
+</li>
+<li>| MBG Killhouses <a href="http://www.armaholic.com/page.php?id=15180">http://www.armaholic.com/page.php?id=15180</a>
+</li>
+<li>| MBG Buildings 3 - European Theatre <a href="http://www.armaholic.com/page.php?id=14828">http://www.armaholic.com/page.php?id=14828</a>
+</li>
+<li>| MBG Generic African Buildings <a href="http://www.armaholic.com/page.php?id=17817">http://www.armaholic.com/page.php?id=17817</a>
+</li>
+<li>| German Town - and waysigns <a href="http://www.armaholic.com/page.php?id=9658">http://www.armaholic.com/page.php?id=9658</a>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; upstream/master</li>
+</ul><hr><h2>
+<a name="developers" class="anchor" href="#developers"><span class="octicon octicon-link"></span></a>Developers</h2>
+
+<ul>
+<li>[VB]AWOL - Lead Developer - <a href="http://www.twitch.tv/vbawol">http://www.twitch.tv/vbawol</a>
+</li>
+<li>Axle - Beta Tester, Lead Trader City Designer, Ideas. - <a href="http://www.twitch.tv/axles">http://www.twitch.tv/axles</a>
+</li>
+<li>Paul Tomany - Models, Textures, Ideas, Beta Tester. - <a href="mailto:ptomany@gmail.com">ptomany@gmail.com</a>
+</li>
+<li>Axeman - Developer - Light system - <a href="mailto:axeman@thefreezer.co.uk">axeman@thefreezer.co.uk</a>
+</li>
+<li>Harlan (dayz10k) - Developer - <a href="https://github.com/dayz10k">https://github.com/dayz10k</a>
+</li>
+<li>Skaronator - Developer - Help with many things <a href="https://github.com/Skaronator">https://github.com/Skaronator</a>
+</li>
+<li>[VB]GREEN - Graphics, Beta Tester, Ideas. <a href="http://www.twitch.tv/vbgreen">http://www.twitch.tv/vbgreen</a>
+</li>
+<li>Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.  <a href="https://github.com/Zabn">https://github.com/Zabn</a>
+</li>
+</ul><hr><h2>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<ul>
+<li>facoptere - Extra Security - <a href="https://github.com/facoptere">https://github.com/facoptere</a>
+</li>
+<li>Torndeco - Fixes - <a href="https://github.com/Torndeco">https://github.com/Torndeco</a>
+</li>
+<li>Armifer - Humanity changes. - <a href="https://github.com/Armifer">https://github.com/Armifer</a>
+</li>
+<li>AVendettaForYou - Trader City Tavi - <a href="https://github.com/AVendettaForYou">https://github.com/AVendettaForYou</a>
+</li>
+<li>Skaronator, krazey - German Localization - <a href="https://github.com/Skaronator">https://github.com/Skaronator</a> <a href="https://github.com/krazey">https://github.com/krazey</a>
+</li>
+<li>VeryBigBro - Russian Localization - <a href="https://github.com/VeryBigBro">https://github.com/VeryBigBro</a>
+</li>
+<li>th4z - French Localization - <a href="https://github.com/th4z">https://github.com/th4z</a>
+</li>
+<li>JoSchaap - Dutch Localization and some typo's - <a href="https://github.com/JoSchaap">https://github.com/JoSchaap</a>
+</li>
+<li>Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - <a href="mailto:maca134@gmail.com">maca134@gmail.com</a>
+</li>
+<li>Tansien - Hive Update to visual studio 2013, added 396 and 397 CHILD for Maintain - <a href="https://github.com/Tansien">https://github.com/Tansien</a>
+</li>
+<li>aeinstein - Crafting now supports all can types. - <a href="https://github.com/aeinstein">https://github.com/aeinstein</a>
+</li>
+<li>vos / Axe Cop - Area Maintenance and ideas - <a href="https://github.com/vos">https://github.com/vos</a>
+</li>
+<li>GeodarCZ - Czech Localization, correction - <a href="https://github.com/Geodar">https://github.com/Geodar</a>
+</li>
+<li>Brovns - Czech Localization - <a href="https://github.com/Brovns">https://github.com/Brovns</a>
+</li>
+<li>Doomscythe - Czech Localization, correction - <a href="https://github.com/Doomscythe">https://github.com/Doomscythe</a>
+</li>
+</ul><hr><h2>
+<a name="special-thanks" class="anchor" href="#special-thanks"><span class="octicon octicon-link"></span></a>Special thanks</h2>
+
+<ul>
+<li>BIS for a incredible and versatile game and engine. <a href="http://www.bistudio.com/">http://www.bistudio.com/</a>
+</li>
+<li>Rocket - DAYZ! <a href="http://dayzmod.com">http://dayzmod.com</a> | <a href="http://dayzgame.com">http://dayzgame.com</a> </li>
+<li>DayZ Community Developers - <a href="https://github.com/DayZMod">https://github.com/DayZMod</a>
+</li>
+<li>ziellos2k - Tag Friendly code. <a href="https://github.com/ziellos2k">https://github.com/ziellos2k</a>
+</li>
+<li>Dayz Hive DLL - <a href="https://github.com/rajkosto/hive">https://github.com/rajkosto/hive</a>
+</li>
+<li>Munchiefest - Beta Tester, Wiki Editor, Ideas - <a href="http://www.twitch.tv/munchiefest">http://www.twitch.tv/munchiefest</a>
+</li>
+<li>Chelsey - Beta Tester, New female textures.</li>
+<li>OrangeSherbet - Beta Tester - <a href="http://www.twitch.tv/orangesherbet">http://www.twitch.tv/orangesherbet</a>
+</li>
+<li>QMGSaint - Beta Tester - <a href="http://www.twitch.tv/qmgsaint">http://www.twitch.tv/qmgsaint</a>
+</li>
+<li>Twitch.tv Streamers - <a href="http://www.twitch.tv/directory/game/DayZ">http://www.twitch.tv/directory/game/DayZ</a>
+</li>
+<li>Thanks to all the other beta testers, you know who you are!</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dayz-epoch maintained by <a href="https://github.com/EgonKrenz">EgonKrenz</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
