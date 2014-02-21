@@ -13,6 +13,10 @@ Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI
 <b>Testserver2:</b><br/>
 5.62.115.87:2302
 
+Scoreboard:
+http://ehcepoch.bplaced.net/stats/<br/>
+Trader Prices:
+http://ehcepoch.bplaced.net/price/<br/>
 Changelog:
 https://github.com/EgonKrenz/DayZ-Epoch/commits/master<br/>
 Towing/Lifting/Cargo/Weight List:
