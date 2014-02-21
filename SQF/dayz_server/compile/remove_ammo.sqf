@@ -52,10 +52,6 @@ if(_classname == "BRDM2_HQ_TK_GUE_EP1") then {
 	_vehicle removeMagazinesTurret ["100Rnd_762x54_PK",[0]];
 };
 
-if(_classname == "M113_TK_EP1_DZE") then {
-	_vehicle removeMagazinesTurret ["100Rnd_127x99_M2",[0]];
-};
-
 if(_classname == "BAF_Jackal2_L2A1_w") then {
 	_vehicle removeMagazinesTurret ["200Rnd_762x51_M240",[0]];
 	_vehicle removeMagazinesTurret ["100Rnd_127x99_M2",[1]];
