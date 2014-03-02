@@ -50,6 +50,7 @@ AllowedVehiclesList = [
 ["LandRover_MG_TK_EP1_DZE",1],
 ["LandRover_Special_CZ_EP1_DZE",1],
 ["LandRover_TK_CIV_EP1",3],
+["LAV25_HQ_DZE",2],
 ["M1030_US_DES_EP1",3],
 ["MH6J_DZ",3],
 ["Mi17_Civilian_DZ",3],
