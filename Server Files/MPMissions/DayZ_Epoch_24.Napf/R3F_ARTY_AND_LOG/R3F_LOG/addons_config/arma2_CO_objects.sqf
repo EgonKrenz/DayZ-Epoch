@@ -166,6 +166,7 @@ R3F_LOG_CFG_transporteurs = R3F_LOG_CFG_transporteurs +
 	["ArmoredSUV_PMC_DZE", 15],
 	["C130J", 190],
 	["MV22", 110],
+	["BAF_Merlin_DZE", 35],
 	["ATV_Base_EP1", 8],
 	["HMMWV_Avenger", 5],
 	["HMMWV_M998A2_SOV_DES_EP1", 12],
