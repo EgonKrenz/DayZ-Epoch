@@ -277,7 +277,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier3milan_veh1 = _this;
 
 // TierIII Milan - build1 Group
-_this = createMarker ["DZAI_marker_tier3milan_build1", [10170.719, 7377.501]];
+_this = createMarker ["DZAI_marker_tier3milan_build1", [9897.5352, 7704.813]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";

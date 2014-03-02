@@ -29,13 +29,13 @@ _t1hasle setMarkerSize [100, 100];
 t1hasle = _t1hasle;
 
 //Marker on Map to show Tier III Milan
-_t3milan = createMarker ["t3milan", [10060.311, 7549.0747]];
+_t3milan = createMarker ["t3milan", [9992.9102, 7527.0044]];
 _t3milan setMarkerText "Tier IV Military Base";
 _t3milan setMarkerShape "RECTANGLE";
 _t3milan setMarkerType "Flag";
 _t3milan setMarkerColor "ColorRed";
 _t3milan setMarkerBrush "Horizontal";
-_t3milan setMarkerSize [240, 220];
+_t3milan setMarkerSize [200, 180];
 t3milan = _t3milan;
 
 //Marker on Map to show Tier IV NEIsle
