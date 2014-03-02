@@ -33,7 +33,7 @@ mission_despawn_timer_max = 3600;
 
 // Distance around Plotpoles + Info Boards (i.e trader cities)
 // To blacklist from spawning missions at
-mission_blacklist_range = 400;
+mission_blacklist_range = 300;
 
 // Distance around Players
 // To blacklist from spawning missions at
