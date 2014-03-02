@@ -12,7 +12,7 @@ diag_log ("DEBUG: Mission Code: Starting Deamon.......");
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\Missions\mission_functions.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\Missions\missions\standard.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\Missions\missions\crash.sqf";
+//call compile preprocessFileLineNumbers "\z\addons\dayz_server\addons\Missions\missions\crash.sqf";
 
 if (mission_hunter) then {
 	call compile preprocessFile "Predator_fnc.sqf";	

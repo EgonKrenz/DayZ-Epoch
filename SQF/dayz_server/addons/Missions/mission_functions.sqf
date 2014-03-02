@@ -383,13 +383,13 @@ mission_spawn = {
 					_mission_type = "Open Area";	
 					_position = [getMarkerPos "center",0,5500,100,0,200,0] call BIS_fnc_findSafePos;
 				};
-				if (_chance <= 100) exitWith {
+/*				if (_chance <= 100) exitWith {
 					_mission_type = "Crash Site";	  
 					_position = RoadList call BIS_fnc_selectRandom;
 					_position = _position modelToWorld [0,0,0];
 					_position = [_position,0,200,20,0,200,0] call BIS_fnc_findSafePos;
 				};
-			};
+*/			};
 
 		if ((count _position) == 2) then {			
 			_isNearPlayer = [_position] call mission_nearbyPlayers;
@@ -413,7 +413,7 @@ mission_spawn = {
 		{
 			case "Crash Site":
 			{
-				[_mission_id, _position] call mission_spawn_crash;
+//				[_mission_id, _position] call mission_spawn_crash;
 			};
 			default
 			{
