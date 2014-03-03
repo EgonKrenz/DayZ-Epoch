@@ -4,7 +4,7 @@ private ["_crate"];
 _vehicle_905 = objNull;
 if (true) then
 {
-  _this = createVehicle ["LocalBasicWeaponsBox", [7701.1235, 14861.063, -0.033706702], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["LocalBasicWeaponsBox", [8423.7725, 14662.104, -0.033706702], [], 0, "CAN_COLLIDE"];
   _vehicle_905 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
@@ -21,7 +21,7 @@ if (true) then
 _vehicle_906 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Gunrack1", [7729.7598, 14828.697, 2.7750008], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Gunrack1", [8461.8291, 14641.625, 2.7750008], [], 0, "CAN_COLLIDE"];
   _vehicle_906 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
@@ -42,7 +42,7 @@ if (true) then
 _vehicle_907 = objNull;
 if (true) then
 {
-  _this = createVehicle ["LocalBasicAmmunitionBox", [7697.2324, 14878.733, 0.039650928], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["LocalBasicAmmunitionBox", [8414.0117, 14677.326, 0.039650928], [], 0, "CAN_COLLIDE"];
   _vehicle_907 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;
@@ -61,7 +61,7 @@ if (true) then
 _vehicle_908 = objNull;
 if (true) then
 {
-  _this = createVehicle ["GuerillaCacheBox", [7760.8125, 14805.721, -0.11913096], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["GuerillaCacheBox", [8472.4482, 14614.813, -0.11913096], [], 0, "CAN_COLLIDE"];
   _vehicle_908 = _this;
   clearweaponcargoGlobal _this;
   clearmagazinecargoGlobal _this;

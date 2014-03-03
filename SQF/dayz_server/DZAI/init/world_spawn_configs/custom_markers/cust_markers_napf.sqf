@@ -27,7 +27,7 @@
 //----------------------------Add your custom markers below this line ----------------------------
 
 // TierITrueb - Main Group
-_this = createMarker ["DZAI_marker_tier1trueb_main", [7731.877, 14836.684]];
+_this = createMarker ["DZAI_marker_tier1trueb_main", [8461.0557, 14649.853]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";
@@ -37,7 +37,7 @@ _this setMarkerDir 120.050;
 DZAI_marker_tier1trueb_main = _this;
 
 // TierITrueb - veh1 Group
-_this = createMarker ["DZAI_marker_tier1trueb_veh1", [7708.9053, 14880.892]];
+_this = createMarker ["DZAI_marker_tier1trueb_veh1", [8424.2148, 14683.388]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";
@@ -47,7 +47,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier1trueb_veh1 = _this;
 
 // TierITrueb - build1 Group
-_this = createMarker ["DZAI_marker_tier1trueb_build1", [7712.6772, 14857.973]];
+_this = createMarker ["DZAI_marker_tier1trueb_build1", [8435.6826, 14663.214]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";
@@ -57,7 +57,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier1trueb_build1 = _this;
 
 // TierITrueb - medic1 Group
-_this = createMarker ["DZAI_marker_tier1trueb_medic1", [7750.5059, 14817.715]];
+_this = createMarker ["DZAI_marker_tier1trueb_medic1", [8485.0928, 14638.495]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";
@@ -277,7 +277,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier3milan_veh1 = _this;
 
 // TierIII Milan - build1 Group
-_this = createMarker ["DZAI_marker_tier3milan_build1", [9897.5352, 7704.813]];
+_this = createMarker ["DZAI_marker_tier3milan_build1", [10145.696, 7453.4546]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";
@@ -297,7 +297,7 @@ _this setMarkerDir 270.050;
 DZAI_marker_tier3milan_prox1 = _this;
 
 // TierIII Milan - prox2 Group
-_this = createMarker ["DZAI_marker_tier3milan_prox2", [10145.696, 7453.4546]];
+_this = createMarker ["DZAI_marker_tier3milan_prox2", [9897.5352, 7704.813]];
 _this setMarkerShape "ELLIPSE";
 _this setMarkeralpha 0;
 _this setMarkerType "Flag";

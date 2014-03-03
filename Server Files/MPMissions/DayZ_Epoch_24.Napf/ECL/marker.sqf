@@ -9,7 +9,7 @@ _t2sachs setMarkerSize [130, 120];
 t2sachs = _t2sachs;
 
 //Marker on Map to show Tier I Trueb
-_t1trueb = createMarker ["t1trueb", [7731.878, 14836.685]];
+_t1trueb = createMarker ["t1trueb", [8455.5225, 14657.679]];
 _t1trueb setMarkerText "Tier I Bandit Camp";
 _t1trueb setMarkerShape "RECTANGLE";
 _t1trueb setMarkerType "Flag";
@@ -29,13 +29,13 @@ _t1hasle setMarkerSize [100, 100];
 t1hasle = _t1hasle;
 
 //Marker on Map to show Tier III Milan
-_t3milan = createMarker ["t3milan", [9992.9102, 7527.0044]];
-_t3milan setMarkerText "Tier IV Military Base";
+_t3milan = createMarker ["t3milan", [9981.9824, 7584.3374]];
+_t3milan setMarkerText "Tier III Milita Base";
 _t3milan setMarkerShape "RECTANGLE";
 _t3milan setMarkerType "Flag";
 _t3milan setMarkerColor "ColorRed";
 _t3milan setMarkerBrush "Horizontal";
-_t3milan setMarkerSize [200, 180];
+_t3milan setMarkerSize [180, 160];
 t3milan = _t3milan;
 
 //Marker on Map to show Tier IV NEIsle
