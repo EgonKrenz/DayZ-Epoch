@@ -82,7 +82,7 @@ if (DZAI_maxLandPatrols > 0) then {
 	DZAI_spawnVehPatrol	= compile preprocessFileLineNumbers format ["%1\spawn_functions\spawn_vehpatrol.sqf",DZAI_directory];
 	DZAI_vehGetOut = compile preprocessFileLineNumbers format ["%1\compile\veh_getout.sqf",DZAI_directory];
 	DZAI_vHandleDamage = compile preprocessFileLineNumbers format ["%1\compile\veh_handledamage.sqf",DZAI_directory];
-	DZAI_vehDestroyed = compile preprocessFileLineNumbers format ["%1\spawn_functions\veh_destroyed.sqf",DZAI_directory];
+	DZAI_vehDestroyed = compile preprocessFileLineNumbers format ["%1\compile\veh_destroyed.sqf",DZAI_directory];
 	DZAI_vehPatrol = compile preprocessFileLineNumbers format ["%1\compile\veh_randompatrol.sqf",DZAI_directory];
 };
 
@@ -242,6 +242,7 @@ DZAI_unconscious = {
 	} else {
 		_anim = "adthpercmstpslowwrfldnon_4";
 	};
+	_unit disableAI "FSM";
 	_unit switchMove _anim;
 	_nul = [objNull, _unit, rSWITCHMOVE, _anim] call RE;  
 	//diag_log "DEBUG :: AI unit is unconscious.";
@@ -252,8 +253,9 @@ DZAI_unconscious = {
 
 	if (alive _unit) then {
 		_nul = [objNull, _unit, rSWITCHMOVE, "amovppnemrunsnonwnondf"] call RE;
-		sleep 0.5;
 		_unit switchMove "amovppnemrunsnonwnondf";
+		sleep 1.5;
+		_unit enableAI "FSM";
 		//diag_log "DEBUG :: AI unit is conscious.";
 		_unit setVariable ["unconscious",false];
 	};
@@ -544,7 +546,7 @@ DZAI_abortDynSpawn = {
 };*/
 
 DZAI_updateUnitCount = {
-	if ((typeName _this) == "SCALAR") then {
+	if (((typeName _this) == "SCALAR") && {(_this >= 0)}) then {
 		DZAI_numAIUnits = _this;
 		true
 	} else {
