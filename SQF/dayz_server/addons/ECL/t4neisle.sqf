@@ -2068,11 +2068,10 @@ if (true) then
 _vehicle_2368 = objNull;
 if (true) then
 {
-  _this = createVehicle ["Misc_cargo_cont_small_EP1", [16744.842, 18082.617, 0.26264513], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["Misc_cargo_cont_small_EP1", [16747.049, 18080.33, -0.010069095], [], 0, "CAN_COLLIDE"];
   _vehicle_2368 = _this;
-  _this setDir 40.588642;
-  _this setVehicleInit "this setVectorUp [0,0,1];";
-  _this setPos [16744.842, 18082.617, 0.26264513];
+  _this setDir 39.024883;
+  _this setPos [16747.049, 18080.33, -0.010069095];
 };
 
 _vehicle_2371 = objNull;
