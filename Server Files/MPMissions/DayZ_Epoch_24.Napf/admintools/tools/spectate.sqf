@@ -38,7 +38,7 @@ if (spectate) then
 				
 				F3_EH = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 0x3D) then {spectate = false;};"];	
 				(vehicle _x) switchCamera "EXTERNAL";
-				titleText ["Spectating...","PLAIN DOWN"];titleFadeOut 4;
+				titleText ["F3 to return","PLAIN DOWN"];titleFadeOut 4;
 				waitUntil { !(alive _x) or !(alive player) or !(spectate)};
 				(findDisplay 46) displayRemoveEventHandler ["KeyDown", F3_EH];
 				player switchCamera _mycv;	
@@ -50,5 +50,5 @@ if (spectate) then
 };
 if (!spectate) then 
 {	
-	titleText ["Back to player...","PLAIN DOWN"];titleFadeOut 4;
+	titleText ["Spectate done","PLAIN DOWN"];titleFadeOut 4;
 };
