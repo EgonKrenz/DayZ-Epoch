@@ -94,6 +94,7 @@ Unique Features:
 * randomized Loot after every restart.
 
 <b>other addons</b>
+* Buildsnapping for easy allignment.
 * Elevator that can be build and used to transport players/cars/helis/some objects.	http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/
 * Towing for towing vehicles on to a Truck.
 * Lifting for lifting vehicles and Objects that are not player owned and locked or under a roof.
@@ -337,6 +338,7 @@ https://github.com/EgonKrenz/DayZ-Epoch/commits/master
 --------------------------
 Included Custom Mods and Plugins
 --------------------------
+* Buildsnapping - http://epochmod.com/forum/index.php?/topic/6036-release-build-snapping-extended-v16-updated-02202014/
 * R3F Artillery and Logistics - http://www.armaholic.com/page.php?id=9285
 * Take Clothes by Churchie - http://opendayz.net/threads/remove-clothes-from-dead-bodies.12291/
 * Elevator by Axe Cop - https://github.com/vos/dayz
