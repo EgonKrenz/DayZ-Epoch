@@ -22,7 +22,7 @@
 if (isServer) then
 {
 	// On crée le point d'attache qui servira aux attachTo pour les objets à charger virtuellement dans les véhicules
-	R3F_LOG_PUBVAR_point_attache = "HeliHEmpty" createVehicle [0, 0, 0];
+	R3F_LOG_PUBVAR_point_attache = "Land_HelipadEmpty_F" createVehicle [0, 0, 0];
 	publicVariable "R3F_LOG_PUBVAR_point_attache";
 };
 
@@ -55,10 +55,10 @@ if !(isServer && isDedicated) then
 		R3F_LOG_classes_objets_transportables = R3F_LOG_classes_objets_transportables + [_x select 0];
 	} forEach R3F_LOG_CFG_objets_transportables;
 	
-	R3F_LOG_FNCT_objet_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_LOG\objet_init.sqf";
-	R3F_LOG_FNCT_heliporteur_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_LOG\heliporteur\heliporteur_init.sqf";
-	R3F_LOG_FNCT_remorqueur_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_LOG\remorqueur\remorqueur_init.sqf";
-	R3F_LOG_FNCT_transporteur_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_LOG\transporteur\transporteur_init.sqf";
+	R3F_LOG_FNCT_objet_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_LOG\objet_init.sqf";
+	R3F_LOG_FNCT_heliporteur_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_LOG\heliporteur\heliporteur_init.sqf";
+	R3F_LOG_FNCT_remorqueur_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_LOG\remorqueur\remorqueur_init.sqf";
+	R3F_LOG_FNCT_transporteur_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_LOG\transporteur\transporteur_init.sqf";
 	
 	/** Indique quel est l'objet concerné par les variables d'actions des addAction */
 	R3F_LOG_objet_addAction = objNull;
@@ -82,5 +82,5 @@ if !(isServer && isDedicated) then
 	R3F_LOG_action_selectionner_objet_charge_valide = false;
 	
 	/** Ce fil d'exécution permet de diminuer la fréquence des vérifications des conditions normalement faites dans les addAction (~60Hz) */
-	execVM "R3F_ARTY_AND_LOG\R3F_LOG\surveiller_conditions_actions_menu.sqf";
+	execVM "addons\R3F_ARTY_AND_LOG\R3F_LOG\surveiller_conditions_actions_menu.sqf";
 };

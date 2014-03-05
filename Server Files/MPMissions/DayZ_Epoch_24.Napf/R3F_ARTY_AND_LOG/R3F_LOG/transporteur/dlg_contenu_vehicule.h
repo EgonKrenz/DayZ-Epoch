@@ -1,13 +1,3 @@
-/**
- * Interface d'affichage du contenu du véhicule
- * 
- * Copyright (C) 2010 madbull ~R3F~
- * 
- * This program is free software under the terms of the GNU General Public License version 3.
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
-
 #include "dlg_constantes.h"
 
 class R3F_LOG_dlg_contenu_vehicule
@@ -30,7 +20,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		R3F_LOG_dlg_CV_btn_fermer
 	};
 	
-	// Définition des classes de base
+	// Dï¿½finition des classes de base
 	class R3F_LOG_dlg_CV_texte
 	{
 		idc = -1;
@@ -41,7 +31,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		sizeEx = 0.023;
 		colorBackground[] = {0.5, 0.5, 0.5, 0};
 		colorText[] = {0.85, 0.85, 0.85, 1};
-		font = "Zeppelin32";
+		font = "TahomaB";
 		text = "";
 	};
 	
@@ -96,23 +86,23 @@ class R3F_LOG_dlg_contenu_vehicule
 		};
 		
 		textureNoShortcut = "";
-		animTextureNormal = "\ca\ui\data\ui_button_normal_ca.paa";
-		animTextureDisabled = "\ca\ui\data\ui_button_disabled_ca.paa";
-		animTextureOver = "\ca\ui\data\ui_button_over_ca.paa";
-		animTextureFocused = "\ca\ui\data\ui_button_focus_ca.paa";
-		animTexturePressed = "\ca\ui\data\ui_button_down_ca.paa";
-		animTextureDefault = "\ca\ui\data\ui_button_default_ca.paa";
+		animTextureNormal = "client\ui\igui_button_normal_ca.paa";
+		animTextureDisabled = "client\ui\igui_button_disabled_ca.paa";
+		animTextureOver = "client\ui\igui_button_over_ca.paa";
+		animTextureFocused = "client\ui\igui_button_down_ca.paa";
+		animTexturePressed = "client\ui\igui_button_down_ca.paa";
+		animTextureDefault = "client\ui\igui_button_default_ca.paa";
 		period = 0.4;
-		font = "Zeppelin32";
+		font = "TahomaB";
 		
-		soundEnter[] = {"\ca\ui\data\sound\mouse2", 0.09, 1};
-		soundPush[] = {"\ca\ui\data\sound\new1", 0.09, 1};
-		soundClick[] = {"\ca\ui\data\sound\mouse3", 0.07, 1};
-		soundEscape[] = {"\ca\ui\data\sound\mouse1", 0.09, 1};
+		soundEnter[] = {"\A3\ui_f\data\Sound\MOUSE2", 0.09, 1};
+		soundPush[] = {"\A3\ui_f\data\Sound\NEW1", 0.09, 1};
+		soundClick[] = {"\A3\ui_f\data\Sound\MOUSE3", 0.07, 1};
+		soundEscape[] = {"\A3\ui_f\data\Sound\MOUSE1", 0.09, 1};
 		
 		class Attributes 
 		{
-			font = "Zeppelin32";
+			font = "TahomaB";
 			color = "#E5E5E5";
 			align = "left";
 			shadow = "true";
@@ -120,7 +110,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		
 		class AttributesImage 
 		{
-			font = "Zeppelin32";
+			font = "TahomaB";
 			color = "#E5E5E5";
 			align = "left";
 			shadow = "true";
@@ -137,17 +127,17 @@ class R3F_LOG_dlg_contenu_vehicule
 		h = 0.04;
 		colorSelect[] = {1, 1, 1, 1};
 		colorText[] = {1, 1, 1, 1};
-		colorBackground[] = {0.8,0.8,0.8,1};
+		colorBackground[] = {0.1,0.1,0.1,0.6};
 		colorSelectBackground[] = {0, 0, 0, 1};
 		colorScrollbar[] = {0.2, 0.2, 0.2, 1};
-		arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
-		arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+		arrowEmpty = "client\ui\ui_arrow_combo_ca.paa";
+        arrowFull = "client\ui\ui_arrow_combo_active_ca.paa";
 		wholeHeight = 0.45;
 		rowHeight = 0.06;
 		color[] = {0.8, 0.8, 0.8, 1};
 		colorActive[] = {0,0,0,1};
 		colorDisabled[] = {0,0,0,0.3};
-		font = "Zeppelin32";
+		font = "TahomaB";
 		sizeEx = 0.035;
 		soundSelect[] = {"",0.1,1};
 		soundExpand[] = {"",0.1,1};
@@ -162,13 +152,13 @@ class R3F_LOG_dlg_contenu_vehicule
 			color[] = {1, 1, 1, 0.6};
 			colorActive[] = {1, 1, 1, 1};
 			colorDisabled[] = {1, 1, 1, 0.3};
-			thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-			arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-			arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-			border = "\ca\ui\data\ui_border_scroll_ca.paa";
+			thumb = "client\ui\ui_scrollbar_thumb_ca.paa";
+			arrowFull = "client\ui\ui_arrow_top_active_ca.paa";
+			arrowEmpty = "client\ui\ui_arrow_top_ca.paa";
+			border = "client\ui\ui_border_scroll_ca.paa";
 		};
 	};
-	// FIN Définition des classes de base
+	// FIN Dï¿½finition des classes de base
 	
 	
 	class R3F_LOG_dlg_CV_arriere_plan
@@ -180,8 +170,8 @@ class R3F_LOG_dlg_contenu_vehicule
 		y = 0.1; h = 0.8;
 		colorText[] = {1, 1, 1, 1};
 		colorBackground[] = {0,0,0,0};
-		text = "\ca\ui\data\ui_gameoptions_background_ca.paa";
-		font = "Zeppelin32";
+		text = "";
+		font = "TahomaB";
 		sizeEx = 0.032;
 	};
 	
@@ -208,7 +198,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		idc = R3F_LOG_IDC_dlg_CV_liste_contenu;
 		x = 0.26; w = 0.45;
 		y = 0.22; h = 0.44;
-		onLBDblClick = "execVM ""R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
+		onLBDblClick = "execVM ""addons\R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
 	};
 	
 	class R3F_LOG_dlg_CV_credits : R3F_LOG_dlg_CV_texte
@@ -228,7 +218,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		y = 0.66;
 		sizeEx = 0.02;
 		text = "";
-		action = "execVM ""R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
+		action = "execVM ""addons\R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
 	};
 	
 	class R3F_LOG_dlg_CV_btn_fermer : R3F_LOG_dlg_CV_btn
