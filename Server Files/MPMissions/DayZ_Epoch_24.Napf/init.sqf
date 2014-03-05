@@ -125,4 +125,4 @@ ModList = [
 [] execVM "Scripts\safezone\safezone.sqf";
 [] execVM "extras\debug_monitor\debug_monitor.sqf";
 [] execVM "extras\debug_monitor1\debug_monitor1.sqf";
-[] execVM "R3F_ARTY_AND_LOG\init.sqf"
+[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf"
