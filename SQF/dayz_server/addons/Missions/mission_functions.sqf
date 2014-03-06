@@ -307,7 +307,7 @@ mission_kill_vehicle_group = {
         };
     } forEach _units;
     
-    if ((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air")) then {
+    if ((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "StaticWeapon")) then {
         [_vehicle, mission_despawn_timer_min] spawn mission_kill_vehicle;		
     } else {
         diag_log format ["DEBUG: MISSIONS: Kill Vehicle Group: Unknown: _vehicle: %1", _vehicle];
