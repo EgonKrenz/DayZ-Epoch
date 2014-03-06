@@ -268,6 +268,7 @@ mission_spawn_vehicle = {
     _vehicle = createVehicle [_vehicle_class, _position, [], 0, "CAN_COLLIDE"];
 	clearWeaponCargoGlobal _vehicle;
 	clearMagazineCargoGlobal _vehicle;
+	[_vehicle_class,_vehicle] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";
     _vehicle setdir _dir;
     _vehicle setpos _position;	
     _objPosition = getPosATL _vehicle;
