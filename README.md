@@ -7,9 +7,9 @@ Forked from https://github.com/vbawol/DayZ-Epoch
 <b>IP:</b><br/>
 85.131.183.62:2302<br/>
 <b>Name:</b><br/>
-[NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
+[Eng/Ger/Rus] DayZ Epoch (1.0.4.2) Napf-Island | active Admins | Trader Safezone | AI | Missions | Lift&Tow | Take Clothes | New Vehicle & Weapons | R3F-Logistics | Elevator | Buildsnapping | & MORE<br/>
 <b>Testserver1:</b><br/>
-Test1 [NEW] Highly Customized/balanced |active Admins|unique Sectors|Missions|AI|Events|Elevator etc<br/>
+Test1 [Eng/Ger/Rus] DayZ Epoch (1.0.4.2) Napf-Island | active Admins | Trader Safezone | AI | Missions | Lift&Tow | Take Clothes | New Vehicle & Weapons | R3F-Logistics | Elevator | Buildsnapping | & MORE<br/>
 <b>Testserver2:</b><br/>
 5.62.115.87:2302
 
