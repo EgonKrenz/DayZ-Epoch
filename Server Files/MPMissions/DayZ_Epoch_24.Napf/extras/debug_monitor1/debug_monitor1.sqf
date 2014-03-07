@@ -1,4 +1,4 @@
-if ((getPlayerUID player) in ["519170","266626AX"]) then { 
+if ((getPlayerUID player) in ["519170","266626AX","5635330"]) then { 
 private ["_warning", "_rtime"];
 //Let Zeds know
 [player,4,true,(getPosATL player)] spawn player_alertZombies;
