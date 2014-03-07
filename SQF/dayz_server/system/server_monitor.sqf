@@ -132,9 +132,9 @@ if (isServer and isNil "sm_done") then {
 			_object setVariable ["lastUpdate",time];
 			_object setVariable ["ObjectID", _idKey, true];
 			[_type,_object] execVM "\z\addons\dayz_server\compile\remove_ammo.sqf";
-			if(_classname == "SatPhone") then {
-			_this setVehicleInit "nul = [this] execVM ""R3F_ARTY_AND_LOG\create_arty_quarter.sqf"";";
-			};
+//			if(_object == "SatPhone") then {
+//			_this setVehicleInit "nul = [this] execVM ""R3F_ARTY_AND_LOG\create_arty_quarter.sqf"";";
+//			};
 
 			_lockable = 0;
 			if(isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
