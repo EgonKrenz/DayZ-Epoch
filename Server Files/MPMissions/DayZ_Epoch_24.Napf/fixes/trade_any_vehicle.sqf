@@ -154,11 +154,18 @@ if (_finished) then {
 
 						_location = (getPosATL _veh);
 
+						if (_part_out isKindOf "StaticWeapon") then {
+						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,"0",_activatingPlayer];
+						publicVariableServer  "PVDZE_veh_Publish2";
+						
+						cutText [format[(localize "STR_EPOCH_ACTIONS_11"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+						} else {
 						//["PVDZE_veh_Publish",[_veh,[_dir,_location],_part_out,false,_keySelected]] call callRpcProcedure;
 						PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 						publicVariableServer  "PVDZE_veh_Publish2";
 
 						cutText [format[(localize "STR_EPOCH_ACTIONS_11"),_qty_in,_textPartIn,_textPartOut], "PLAIN DOWN"];
+						};
 					};
 				} else {
 					cutText [(localize "str_epoch_player_107"), "PLAIN DOWN"];
