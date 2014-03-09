@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Erstellungszeit: 09. Mrz 2014 um 22:36
+-- Erstellungszeit: 09. Mrz 2014 um 22:46
 -- Server Version: 5.1.73
 -- PHP-Version: 5.3.3
 
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Tabellenstruktur für Tabelle `Traders_DATA`
 --
 
-CREATE TABLE `Traders_DATA` (
+CREATE TABLE IF NOT EXISTS `Traders_DATA` (
   `id` int(8) NOT NULL AUTO_INCREMENT,
   `item` varchar(255) NOT NULL COMMENT '[Class Name,1 = CfgMagazines | 2 = Vehicle | 3 = Weapon]',
   `qty` int(8) NOT NULL COMMENT 'amount in stock available to buy',
@@ -37,7 +37,7 @@ CREATE TABLE `Traders_DATA` (
   `afile` varchar(64) NOT NULL DEFAULT 'trade_items',
   PRIMARY KEY (`id`),
   UNIQUE KEY `item` (`item`,`tid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7844 ;
 
 --
 -- Daten für Tabelle `Traders_DATA`
@@ -1430,7 +1430,19 @@ INSERT INTO `Traders_DATA` (`id`, `item`, `qty`, `buy`, `sell`, `order`, `tid`, 
 (7835, '["SPG9_TK_INS_EP1",2]', 0, '[6,"ItemBriefcase100oz",1]', '[3,"ItemBriefcase100oz",1]', 0, 627, 'trade_any_vehicle_free'),
 (7837, '["M252_US_EP1",2]', 0, '[9,"ItemBriefcase100oz",1]', '[4,"ItemBriefcase100oz",1]', 0, 477, 'trade_any_vehicle_free'),
 (7838, '["M2StaticMG_US_EP1",2]', 84, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 477, 'trade_any_vehicle_free'),
-(7839, '["MK19_TriPod_US_EP1",2]', 0, '[3,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 477, 'trade_any_vehicle_free');
+(7839, '["MK19_TriPod_US_EP1",2]', 0, '[3,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 477, 'trade_any_vehicle_free'),
+(7840, '["Misc_cargo_cont_small",2]', 100, '[4,"ItemGoldBar10oz",1]', '[2,"ItemGoldBar10oz",1]', 0, 636, 'trade_any_vehicle_free'),
+(7841, '["Land_Misc_Cargo1B_EP1",2]', 100, '[1,"ItemBriefcase100oz",1]', '[5,"ItemGoldBar10oz",1]', 0, 636, 'trade_any_vehicle_free'),
+(7842, '["Land_Misc_Cargo1B_EP1",2]', 100, '[1,"ItemBriefcase100oz",1]', '[5,"ItemGoldBar10oz",1]', 0, 555, 'trade_any_vehicle_free'),
+(7843, '["Misc_cargo_cont_small",2]', 100, '[4,"ItemGoldBar10oz",1]', '[2,"ItemGoldBar10oz",1]', 0, 555, 'trade_any_vehicle_free');
+
+DELIMITER $$
+--
+-- Ereignisse
+--
+CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY STARTS '2014-01-30 21:22:12' ON COMPLETION NOT PRESERVE ENABLE COMMENT 'Removes damaged vehicles' DO DELETE FROM `Object_DATA` WHERE Damage = 1$$
+
+DELIMITER ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
