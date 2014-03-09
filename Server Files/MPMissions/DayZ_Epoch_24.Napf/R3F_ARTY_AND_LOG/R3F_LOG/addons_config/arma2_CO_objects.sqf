@@ -167,6 +167,7 @@ R3F_LOG_CFG_transporteurs = R3F_LOG_CFG_transporteurs +
 	["GNT_C185C", 12],
 	["GNT_C185R", 12],
 	["GNT_C185U", 12],
+	["ATV_Base_EP1", 18],
  	["ArmoredSUV_PMC_DZE", 15],
  	["C130J", 190],
  	["MV22", 110],
