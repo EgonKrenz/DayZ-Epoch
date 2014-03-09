@@ -60,7 +60,7 @@ Unique Features:
 
 <b>Balancing</b>
 * closer to the DayZ Experience.
-* less Vehicle Spawns but more value --> more exitement.
+* less Vehicle Spawns but more value --> more Excitement.
 * Vendor Prices tweaked.
 * added more Vehicles.
 * removed stary sobor tents.
