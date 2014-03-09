@@ -24,8 +24,6 @@ while {true} do
 			R3F_LOG_objet_addAction = _objet_pointe;
 			
 			// Note : les expressions de conditions ne sont pas factorisées pour garder de la clarté (déjà que c'est pas vraiment ça) (et le gain serait minime)
-
-			Object_canLock = !(_objet_pointe getVariable ['objectLocked', false]);
 			
 			// Si l'objet est un objet déplaçable
 			if ({_objet_pointe isKindOf _x} count R3F_LOG_CFG_objets_deplacables > 0) then
