@@ -21,7 +21,7 @@ else
 	
 	R3F_LOG_objet_selectionne = objNull;
 	
-	private ["_objet", "_est_calculateur", "_arme_principale", "_action_menu", "_azimut_canon"];
+	private ["_objet", "_est_calculateur", "_arme_principale", "_action_menu_release_relative", "_action_menu_release_horizontal" , "_action_menu_45", "_action_menu_90", "_action_menu_180", "_azimut_canon"];
 	
 	_objet = _this select 0;
 	
@@ -85,8 +85,13 @@ else
 			};
 			
 			R3F_LOG_mutex_local_verrou = false;
+			R3F_LOG_force_horizontally = false;
 			
-			_action_menu = player addAction [("<t color=""#dddd00"">" + STR_R3F_LOG_action_relacher_objet + "</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\relacher.sqf", nil, 5, true, true];
+			_action_menu_release_relative = player addAction [("<t color=""#21DE31"">" + STR_R3F_LOG_action_relacher_objet + "</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\relacher.sqf", false, 5, true, true];
+			_action_menu_release_horizontal = player addAction [("<t color=""#21DE31"">" + STR_RELEASE_HORIZONTAL + "</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\relacher.sqf", true, 5, true, true];
+			_action_menu_45 = player addAction [("<t color=""#dddd00"">Rotate object 45°</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\rotate.sqf", 45, 5, true, true];
+			_action_menu_90 = player addAction [("<t color=""#dddd00"">Rotate object 90°</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\rotate.sqf", 90, 5, true, true];
+			_action_menu_180 = player addAction [("<t color=""#dddd00"">Rotate object 180°</t>"), "R3F_ARTY_AND_LOG\R3F_LOG\objet_deplacable\rotate.sqf", 180, 5, true, true];
 			
 			// On limite la vitesse de marche et on interdit de monter dans un véhicule tant que l'objet est porté
 			while {!isNull R3F_LOG_joueur_deplace_objet && alive player} do
@@ -98,10 +103,12 @@ else
 					sleep 1;
 				};
 				
-				if ([0,0,0] distance (velocity player) > 2.8) then
+				if ([0,0,0] distance (velocity player) > 3.5) then
 				{
 					player globalChat STR_R3F_LOG_courir_trop_vite;
-					player playMove "AmovPpneMstpSnonWnonDnon";
+					if((currentWeapon player) in ["M9", "M9SD", "Colt1911", "Makarov", "MakarovSD", "Sa61_EP1", "UZI_EP1", "UZI_SD_EP1", "revolver_EP1", "revolver_gold_EP1", "glock17_EP1"])
+					then {player playMove "amovpercmstpsraswpstdnon_amovppnemstpsraswpstdnon";} else {player playMove "AmovPpneMstpSnonWnonDnon"};
+
 					sleep 1;
 				};
 				
@@ -110,10 +117,34 @@ else
 			
 			// L'objet n'est plus porté, on le repose
 			detach _objet;
-			_objet setPos [getPos _objet select 0, getPos _objet select 1, 0];
+			if(R3F_LOG_force_horizontally) then {
+				R3F_LOG_force_horizontally = false;
+
+				_opos = getPosASL _objet;
+				_ppos = getPosASL player;
+				_opos set [2, _ppos select 2];
+				_opos2 = +_opos;
+				_opos2 set [2, (_opos2 select 2) - 1];
+				if(terrainIntersectASL [_opos, _opos2]) then {
+					_objet setPosATL [getPosATL _objet select 0, getPosATL _objet select 1, getPosATL player select 2];
+				} else {
+					_objet setPosASL _opos;
+				};
+			} else {
+				if((getPosATL player select 2) < 5) then {
+					_objet setPos [getPos _objet select 0, getPos _objet select 1, getPosATL player select 2];
+				} else {
+					_objet setPosATL [getPosATL _objet select 0, getPosATL _objet select 1, getPosATL player select 2];
+				};
+			};
+			
 			_objet setVelocity [0, 0, 0];
 			
-			player removeAction _action_menu;
+			player removeAction _action_menu_release_relative;
+			player removeAction _action_menu_release_horizontal;
+			player removeAction _action_menu_45;
+			player removeAction _action_menu_90;
+			player removeAction _action_menu_180;
 			R3F_LOG_joueur_deplace_objet = objNull;
 			
 			_objet setVariable ["R3F_LOG_est_deplace_par", objNull, true];
@@ -121,9 +152,15 @@ else
 			// Restauration de l'arme primaire
 			if (alive player && _arme_principale != "") then
 			{
-				player addWeapon _arme_principale;
-				player selectWeapon _arme_principale;
-				player selectWeapon (getArray (configFile >> "cfgWeapons" >> _arme_principale >> "muzzles") select 0);
+				if(primaryWeapon player != "") then {
+					_o = createVehicle ["WeaponHolder", player modelToWorld [0,0,0], [], 0, "NONE"];
+					_o addWeaponCargoGlobal [_arme_principale, 1];
+
+				} else {
+					player addWeapon _arme_principale;
+					player selectWeapon _arme_principale;
+					player selectWeapon (getArray (configFile >> "cfgWeapons" >> _arme_principale >> "muzzles") select 0);
+				};
 			};
 		};
 	};
