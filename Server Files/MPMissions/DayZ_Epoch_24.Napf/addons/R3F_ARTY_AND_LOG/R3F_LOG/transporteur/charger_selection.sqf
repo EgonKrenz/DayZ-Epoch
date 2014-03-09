@@ -25,52 +25,12 @@ else
 	
 	if (!(isNull _objet) && !(_objet getVariable "R3F_LOG_disabled")) then
 	{
-	
-/*		_SnS_cond = true;
-		// SnS Custom PR Code
-		/*
-		switch (playerSide) do {
-			case east: {
-				if (count SnS_fob_east > 0) then {
-					{
-						if ((_x select 3) distance _objet < 60) exitWith {
-							_SnS_cond = false;
-						};
-					} foreach SnS_fob_east;
-				};
-			};
-			case west: {
-				if (count SnS_fob_west > 0) then {
-					{
-						if ((_x select 3) distance _objet < 60) exitWith {
-							_SnS_cond = false;
-						};
-					} foreach SnS_fob_west;
-				};
-			};
-		};
-		if (count SnS_fob_east > 0) then {
-			{
-				if ((_x select 3) distance _objet < 60) exitWith {
-					_SnS_cond = false;
-				};
-			} foreach SnS_fob_east;
-		};
-		
-		if (count SnS_fob_west > 0) then {
-			{
-				if ((_x select 3) distance _objet < 60) exitWith {
-					_SnS_cond = false;
-				};
-			} foreach SnS_fob_west;
-		};
-		*/
 		if (isNull (_objet getVariable "R3F_LOG_est_transporte_par") && (isNull (_objet getVariable "R3F_LOG_est_deplace_par") || (!alive (_objet getVariable "R3F_LOG_est_deplace_par")))) then
 		{
 			private ["_objets_charges", "_chargement_actuel", "_cout_capacite_objet", "_chargement_maxi"];
 			
 			_objets_charges = _transporteur getVariable "R3F_LOG_objets_charges";
-						
+			
 			// Calcul du chargement actuel
 			_chargement_actuel = 0;
 			{
@@ -139,7 +99,7 @@ else
 			}
 			else
 			{
-				player globalChat format [STR_R3F_LOG_action_charger_selection_pas_assez_de_place, (_chargement_maxi - _chargement_actuel), _cout_capacite_objet];
+				player globalChat STR_R3F_LOG_action_charger_selection_pas_assez_de_place;
 			};
 		}
 		else

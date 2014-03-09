@@ -32,7 +32,7 @@
 	#include "R3F_LOG_disable_enable.sqf"
 	
 	// Chargement du fichier de langage
-	call compile preprocessFile format ["addons\R3F_ARTY_AND_LOG\%1_strings_lang.sqf", R3F_ARTY_AND_LOG_CFG_langage];
+	call compile preprocessFile format ["R3F_ARTY_AND_LOG\%1_strings_lang.sqf", R3F_ARTY_AND_LOG_CFG_langage];
 	
 	if (isServer) then
 	{
@@ -66,11 +66,11 @@
 	// Auto-détection permanente des objets sur le jeu
 	if !(isServer && isDedicated) then
 	{
-		execVM "addons\R3F_ARTY_AND_LOG\surveiller_nouveaux_objets.sqf";
+		execVM "R3F_ARTY_AND_LOG\surveiller_nouveaux_objets.sqf";
 	}
 	// Version allégée pour le serveur dédié
 	else
 	{
-		execVM "addons\R3F_ARTY_AND_LOG\surveiller_nouveaux_objets_dedie.sqf";
+		execVM "R3F_ARTY_AND_LOG\surveiller_nouveaux_objets_dedie.sqf";
 	};
 };

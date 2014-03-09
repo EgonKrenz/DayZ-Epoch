@@ -1,3 +1,13 @@
+/**
+ * Interface d'affichage du contenu du véhicule
+ * 
+ * Copyright (C) 2010 madbull ~R3F~
+ * 
+ * This program is free software under the terms of the GNU General Public License version 3.
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #include "dlg_constantes.h"
 
 class R3F_LOG_dlg_contenu_vehicule
@@ -20,7 +30,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		R3F_LOG_dlg_CV_btn_fermer
 	};
 	
-	// DÃ©finition des classes de base
+	// Définition des classes de base
 	class R3F_LOG_dlg_CV_texte
 	{
 		idc = -1;
@@ -158,7 +168,7 @@ class R3F_LOG_dlg_contenu_vehicule
 			border = "\ca\ui\data\ui_border_scroll_ca.paa";
 		};
 	};
-	// FIN DÃ©finition des classes de base
+	// FIN Définition des classes de base
 	
 	
 	class R3F_LOG_dlg_CV_arriere_plan
@@ -198,7 +208,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		idc = R3F_LOG_IDC_dlg_CV_liste_contenu;
 		x = 0.26; w = 0.45;
 		y = 0.22; h = 0.44;
-		onLBDblClick = "execVM ""addons\R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
+		onLBDblClick = "execVM ""R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
 	};
 	
 	class R3F_LOG_dlg_CV_credits : R3F_LOG_dlg_CV_texte
@@ -218,7 +228,7 @@ class R3F_LOG_dlg_contenu_vehicule
 		y = 0.66;
 		sizeEx = 0.02;
 		text = "";
-		action = "execVM ""addons\R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
+		action = "execVM ""R3F_ARTY_AND_LOG\R3F_LOG\transporteur\decharger.sqf"";";
 	};
 	
 	class R3F_LOG_dlg_CV_btn_fermer : R3F_LOG_dlg_CV_btn

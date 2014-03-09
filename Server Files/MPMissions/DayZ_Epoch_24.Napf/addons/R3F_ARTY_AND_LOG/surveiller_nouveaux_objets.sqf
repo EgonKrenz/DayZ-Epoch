@@ -53,7 +53,7 @@ while {true} do
 				{
 					[_objet] spawn R3F_LOG_FNCT_heliporteur_init;
 				};
-
+				
 				// Si l'objet est un véhicule remorqueur
 				if ({_objet isKindOf _x} count R3F_LOG_CFG_remorqueurs > 0) then
 				{
@@ -67,26 +67,23 @@ while {true} do
 				};
 				#endif
 				
-
-
 				#ifdef R3F_ARTY_enable
 				// Si l'objet est un pièce d'artillerie d'un type à gérer
 				if ({_objet isKindOf _x} count R3F_ARTY_CFG_pieces_artillerie > 0) then
 				{
-
 					[_objet] spawn R3F_ARTY_FNCT_piece_init;
 				};
 				
 				// Si l'objet doit mettre à disposition un calculateur d'artillerie depuis l'intérieur
 				if ({_objet isKindOf _x} count R3F_ARTY_CFG_calculateur_interne > 0) then
 				{
-					_objet addAction [("<t color=""#dddd00"">" + STR_R3F_ARTY_action_ouvrir_dlg_SM + "</t>"), "addons\R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\ouvrir_dlg_saisie_mission.sqf", nil, 6, false, true, "", "vehicle player == _target"];
+					_objet addAction [("<t color=""#dddd00"">" + STR_R3F_ARTY_action_ouvrir_dlg_SM + "</t>"), "R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\ouvrir_dlg_saisie_mission.sqf", nil, 6, false, true, "", "vehicle player == _target"];
 				};
 				
 				// Si l'objet doit mettre à disposition un calculateur d'artillerie depuis l'intérieur
 				if ({_objet isKindOf _x} count R3F_ARTY_CFG_calculateur_externe > 0) then
 				{
-					_objet addAction [("<t color=""#dddd00"">" + STR_R3F_ARTY_action_ouvrir_dlg_SM + "</t>"), "addons\R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\ouvrir_dlg_saisie_mission.sqf", nil, 6, true, true, "", "vehicle player == player"];
+					_objet addAction [("<t color=""#dddd00"">" + STR_R3F_ARTY_action_ouvrir_dlg_SM + "</t>"), "R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\ouvrir_dlg_saisie_mission.sqf", nil, 6, true, true, "", "vehicle player == player"];
 				};
 				
 				// Si c'est un calculateur

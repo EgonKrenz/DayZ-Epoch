@@ -42,16 +42,16 @@ if (isClass (configFile >> "CfgVehicles" >> "BAF_Soldier_MTP")) then
 if !(isServer && isDedicated) then
 {
 	// Compilation de quelques fonctions
-	R3F_ARTY_FNCT_calculer_portee = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\calcul_balistique\calculer_portee.sqf";
-	R3F_ARTY_FNCT_calculer_elevation = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\calcul_balistique\calculer_elevation.sqf";
-	R3F_ARTY_FNCT_tirer_position_dans_zone_elliptique = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\tirer_position_dans_zone_elliptique.sqf";
-	R3F_ARTY_FNCT_formater_deux_decimales = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\formater_deux_decimales.sqf";
-	R3F_ARTY_FNCT_formater_pos2D_vers_posGPS = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\formater_pos2D_vers_posGPS.sqf";
-	R3F_ARTY_FNCT_afficher_ordre = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\afficher_ordre.sqf";
-	R3F_ARTY_FNCT_ordre_suivant = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\ordre_suivant.sqf";
-	R3F_ARTY_FNCT_afficher_chargeur = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\afficher_chargeur.sqf";
-	R3F_ARTY_FNCT_piece_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\piece_init.sqf";
-	R3F_ARTY_FNCT_calculateur_init = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\calculateur_init.sqf";
+	R3F_ARTY_FNCT_calculer_portee = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\calcul_balistique\calculer_portee.sqf";
+	R3F_ARTY_FNCT_calculer_elevation = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\calcul_balistique\calculer_elevation.sqf";
+	R3F_ARTY_FNCT_tirer_position_dans_zone_elliptique = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\tirer_position_dans_zone_elliptique.sqf";
+	R3F_ARTY_FNCT_formater_deux_decimales = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\formater_deux_decimales.sqf";
+	R3F_ARTY_FNCT_formater_pos2D_vers_posGPS = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\fonctions_generales\formater_pos2D_vers_posGPS.sqf";
+	R3F_ARTY_FNCT_afficher_ordre = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\afficher_ordre.sqf";
+	R3F_ARTY_FNCT_ordre_suivant = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\ordre_suivant.sqf";
+	R3F_ARTY_FNCT_afficher_chargeur = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\dlg_artilleur\afficher_chargeur.sqf";
+	R3F_ARTY_FNCT_piece_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\piece_init.sqf";
+	R3F_ARTY_FNCT_calculateur_init = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\calculateur_init.sqf";
 	
 	// Liste des ordres ; 2 dimensions ; 1ère dim : les ordres ; 2ème dim : [émetteur, récepteur, azimut, élévation, index_munition]
 	R3F_ARTY_ordres_recus = [];
@@ -62,13 +62,13 @@ if !(isServer && isDedicated) then
 // Serveur dédié seulement
 else
 {
-	R3F_ARTY_FNCT_piece_init_dedie = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\piece_init_dedie.sqf";
+	R3F_ARTY_FNCT_piece_init_dedie = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\piece_init_dedie.sqf";
 };
 
 if (isServer) then
 {
-	R3F_ARTY_FNCT_creer_poste_commandement = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\creer_poste_commandement.sqf";
-	R3F_ARTY_FNCT_supprimer_poste_commandement = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\supprimer_poste_commandement.sqf";
+	R3F_ARTY_FNCT_creer_poste_commandement = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\creer_poste_commandement.sqf";
+	R3F_ARTY_FNCT_supprimer_poste_commandement = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\poste_commandement\supprimer_poste_commandement.sqf";
 	
 	// Service offert par le serveur : créer un poste de commandement d'artillerie (valeur = calculateur associé)
 	R3F_ARTY_FNCT_PUBVAR_creer_poste_commandement =
@@ -85,12 +85,12 @@ if (isServer) then
 	"R3F_ARTY_PUBVAR_supprimer_poste_commandement" addPublicVariableEventHandler R3F_ARTY_FNCT_PUBVAR_supprimer_poste_commandement;
 };
 
-R3F_ARTY_FNCT_get_chargeur_actuel = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\get_chargeur_actuel.sqf";
-R3F_ARTY_FNCT_chargeurs_sont_egaux = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\chargeurs_sont_egaux.sqf";
-R3F_ARTY_FNCT_get_chargeurs_compatibles_piece = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\get_chargeurs_compatibles_piece.sqf";
-R3F_ARTY_FNCT_EH_fired_piece = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\EH_fired_piece.sqf";
-R3F_ARTY_FNCT_executer_mission_tir_par_IA = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\executer_mission_tir_par_IA.sqf";
-R3F_ARTY_FNCT_suivre_projectile = compile preprocessFile "addons\R3F_ARTY_AND_LOG\R3F_ARTY\piece\suivre_projectile.sqf";
+R3F_ARTY_FNCT_get_chargeur_actuel = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\get_chargeur_actuel.sqf";
+R3F_ARTY_FNCT_chargeurs_sont_egaux = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\chargeurs_sont_egaux.sqf";
+R3F_ARTY_FNCT_get_chargeurs_compatibles_piece = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\get_chargeurs_compatibles_piece.sqf";
+R3F_ARTY_FNCT_EH_fired_piece = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\EH_fired_piece.sqf";
+R3F_ARTY_FNCT_executer_mission_tir_par_IA = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\executer_mission_tir_par_IA.sqf";
+R3F_ARTY_FNCT_suivre_projectile = compile preprocessFile "R3F_ARTY_AND_LOG\R3F_ARTY\piece\suivre_projectile.sqf";
 
 // Mémorisation de la liste du menu des munitions pour l'interface
 private ["_table_correspondance_index_munition", "_table_correspondance_index_nom_munition", "_chargeurs_compatibles_par_piece"];
