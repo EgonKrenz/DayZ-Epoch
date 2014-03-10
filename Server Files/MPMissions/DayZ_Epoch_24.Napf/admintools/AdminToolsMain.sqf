@@ -17,15 +17,15 @@ if ((getPlayerUID player) in AdminList) then { // Admins
 	["",true],
 		["-- Epoch Admin Tools (Level: Admin) --", [], "", -5, [["expression", ""]], "1", "0"],
 		["Admin Menu >>", [], "#USER:AdminMenu", -5, [["expression", ""]], "1", "1"],
-		["ESP Menu >>", [],  "#USER:EspMenu", -5, [["expression", ""]], "1", "1"],			
+		["ESP Menu >>", [],  "#USER:EspMenu", -5, [["expression", ""]], "1", "1"],
 		["Skin Change Menu >>", [], "#USER:AdminSkinsMenu", -5, [["expression", ""]], "1", "1"],
 		["Weapon Kits >>", [], "#USER:WeaponMenu", -5, [["expression", ""]], "1", "1"],
 		["Crate Menu >>",[],"#USER:CrateMenu",-5,[["expression",""]],"1","1"],
-		["Vehicle Menu >>",[],"#USER:VehicleMenu",-5,[["expression",""]],"1","1"],	
-		["Weather/Time Menu >>", [], "#USER:WTMenu", -5, [["expression", ""]], "1", "1"],			
-		["Epoch Menu >>", [], "#USER:EpochMenu", -5, [["expression", ""]], "1", "1"],			
+		["Vehicle Menu >>",[],"#USER:VehicleMenu",-5,[["expression",""]],"1","1"],
+		["Weather/Time Menu >>", [], "#USER:WTMenu", -5, [["expression", ""]], "1", "1"],
+		["Epoch Menu >>", [], "#USER:EpochMenu", -5, [["expression", ""]], "1", "1"],
 		["", [], "", -5, [["expression", ""]], "1", "0"],
-			["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]		
+			["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]
 	];};
 if ((getPlayerUID player) in ModList) then { // Admin Level 3
 	epochmenustart =
@@ -33,18 +33,21 @@ if ((getPlayerUID player) in ModList) then { // Admin Level 3
 	["",true],
 		["-- Epoch Admin Tools (Level: Mod) --", [],  "", -5, [["expression", ""]], "1", "0"],
 		["Mod Menu >>", [], "#USER:ModMenu", -5, [["expression", ""]], "1", "1"],
-		["Temporary Vehicle Menu >>", [], "#USER:VehicleTempMenu", -5, [["expression", ""]], "1", "1"],		
+		["ESP Menu >>", [],  "#USER:EspMenumod", -5, [["expression", ""]], "1", "1"],
 		["Skin Change Menu >>", [], "#USER:AdminSkinsMenu", -5, [["expression", ""]], "1", "1"],
+		["Temporary Vehicle Menu >>", [], "#USER:VehicleTempMenu", -5, [["expression", ""]], "1", "1"],
+		["Epoch Menu >>", [], "#USER:EpochMenu", -5, [["expression", ""]], "1", "1"],
 		["", [], "", -5, [["expression", ""]], "1", "0"],
-			["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]		
-	];};			
+			["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]
+	];};
 // };
 AdminMenu =
 [
 ["",true],
 	["Spectate player", [],  "", -5, [["expression", format[_EXECscript1,"spectate.sqf"]]], "1", "1"],	
 	["Teleport", [],  "", -5, [["expression", format[_EXECscript1,"malteleport.sqf"]]], "1", "1"],
-	["Teleport To Me", [], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],		
+	["Teleport To Me", [], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],
+	["Teleport To Player", [], "", -5, [["expression", format[_EXECscript1, "TpToPlayer.sqf"]]], "1", "1"],
 	["Toggle God Mode", [],  "", -5, [["expression", format[_EXECscript1,"malplayerGM.sqf"]]], "1", "1"],
 	["Zombie Shield",[],"",-5,[["expression",format[_EXECscript1,"zombieshield.sqf"]]],"1","1"],
 	["Toggle Flying", [],  "", -5, [["expression", format[_EXECscript1,"malfly.sqf"]]], "1", "1"],		
@@ -63,6 +66,7 @@ ModMenu =
 	["Spectate player", [],  "", -5, [["expression", format[_EXECscript1,"spectate.sqf"]]], "1", "1"],	
 	["Teleport", [],  "", -5, [["expression", format[_EXECscript1,"malteleport.sqf"]]], "1", "1"],
 	["Teleport To Me", [], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],		
+	["Teleport To Player", [], "", -5, [["expression", format[_EXECscript1, "TpToPlayer.sqf"]]], "1", "1"],
 	["Toggle God Mode", [],  "", -5, [["expression", format[_EXECscript1,"malplayerGM.sqf"]]], "1", "1"],
 	["Point to Repair (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointrepair.sqf"]]], "1", "1"],
 	["Point to Delete (Perm)",[],"",-5,[["expression",format[_EXECscript1,"DatabaseRemove.sqf"]]],"1","1"],
@@ -86,13 +90,14 @@ VehicleMenu =
 VehicleTools =
 [
 ["",true],	
-	["Speedboost", [],  "", -5, [["expression", format[_EXECscript1,"speedboost.sqf"]]], "1", "1"],		
-	["Toggle Vehicle Auto Repair",[],  "", -5, [["expression", format[_EXECscript1,"malvehicleGMon.sqf"]]], "1", "1"],		
+	["Speedboost", [],  "", -5, [["expression", format[_EXECscript1,"speedboost.sqf"]]], "1", "1"],
+	["Toggle Vehicle Godmode",[],  "", -5, [["expression", format[_EXECscript1,"cargod.sqf"]]], "1", "1"],
+	["Toggle Vehicle Auto Repair",[],  "", -5, [["expression", format[_EXECscript1,"malvehicleGMon.sqf"]]], "1", "1"],
 	["Point to Repair (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointrepair.sqf"]]], "1", "1"],
-	["Point to only Refuel (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointonlyrefuel.sqf"]]], "1", "1"],		
-	["Point to Delete (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointdelete.sqf"]]], "1", "1"],		
+	["Point to only Refuel (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointonlyrefuel.sqf"]]], "1", "1"],	
+	["Point to Delete (Temp)", [],  "", -5, [["expression", format[_EXECscript1,"malpointdelete.sqf"]]], "1", "1"],
 	["Point to Delete (Perm)",[],"",-5,[["expression",format[_EXECscript1,"DatabaseRemove.sqf"]]],"1","1"],
-	["Flip Vehicle", [],  "", -5, [["expression", format[_EXECscript1,"flipvehicle.sqf"]]], "1", "1"],		
+	["Flip Vehicle", [],  "", -5, [["expression", format[_EXECscript1,"flipvehicle.sqf"]]], "1", "1"],
 	["", [], "", -5, [["expression", ""]], "1", "0"],
 		["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]
 ];
@@ -110,7 +115,15 @@ EspMenu =
 [
 ["",true],
 	["Modify ESP options in EnhancedESP.sqf",[],"",-5,[["expression",""]],"1","0"],
+	["Default ESP", [],  "", -5, [["expression", format[_EXECscript1,"espold.sqf"]]], "1", "1"],
 	["Enhanced ESP", [],  "", -5, [["expression", format[_EXECscript1,"EnhancedESP.sqf"]]], "1", "1"],
+	["Player ESP Only", [],  "", -5, [["expression", format[_EXECscript1,"mallightesp.sqf"]]], "1", "1"],		
+		["", [], "", -5, [["expression", ""]], "1", "0"],
+		["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]
+];
+EspMenumod = 
+[
+["",true],
 	["Player ESP Only", [],  "", -5, [["expression", format[_EXECscript1,"mallightesp.sqf"]]], "1", "1"],		
 		["", [], "", -5, [["expression", ""]], "1", "0"],
 		["Main Menu", [20], "#USER:epochmenustart", -5, [["expression", ""]], "1", "1"]

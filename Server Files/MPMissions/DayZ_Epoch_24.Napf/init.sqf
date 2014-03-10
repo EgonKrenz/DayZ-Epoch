@@ -109,15 +109,7 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 
-// Epoch Admin Tools
-AdminList = [
-"519170", // <Admin In-Game Name>
-"9999999" // <Admin In-Game Name>
-];
-ModList = [
-"266626AX", // <Admin In-Game Name>
-"5635330" // <Admin In-Game Name>
-];
+[] execVM "admintools\AdminList.sqf";
 [] execVM "admintools\Activate.sqf";
 [] execVM "ECL\ECLinit.sqf";
 [] execVM "Scripts\safearea\base_SafeArea.sqf";
