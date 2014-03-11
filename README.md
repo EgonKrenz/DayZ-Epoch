@@ -67,9 +67,11 @@ Unique Features:
 * removed some too modern looking and unecessary Vehicles.
 
 <b>Enhanced Crafting and Building System</b>
-* lighttower with great Area.
-* more sandbag Buildings.
-* Mg's, SPG and Granade Launcher on Tripods.
+* Buildsnapping.
+* Elevator.
+* Zed repelling Generator
+* Lighttower with great Area.
+* more Sandbag-Buildings.
 * Searchlight.
 
 <b>Environment</b>
@@ -87,14 +89,14 @@ Unique Features:
 
 <b>Items</b>
 * new Items never seen before in dayz, like:
-* Mg, SPG, Granadelauncher on Tripod.
+* Mg's, SPG and Granade Launcher on Tripods.
 * Mortars.
 * custom Vehicles.
 * rare Loot.
 * randomized Loot after every restart.
 
 <b>other addons</b>
-* Buildsnapping for easy allignment.
+* Buildsnapping for easy allignment. http://epochmod.com/forum/index.php?/topic/6036-release-build-snapping-extended-v16-updated-02202014/
 * Elevator that can be build and used to transport players/cars/helis/some objects.	http://epochmod.com/forum/index.php?/topic/3635-elevator-script-for-players-and-vehicles-wipprototype/
 * Towing for towing vehicles on to a Truck.
 * Lifting for lifting vehicles and Objects that are not player owned and locked or under a roof.
