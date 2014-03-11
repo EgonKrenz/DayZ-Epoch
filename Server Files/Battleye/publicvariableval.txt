@@ -31,8 +31,8 @@
 1 "task" !"taskHint"
 1 "allow"
 5 "enable"
-5 "spawn"  !="_this spawn fnc_plyrHit;"
-1 "this"  !="_this spawn fnc_plyrHit;"
+//5 "spawn"  !="_this spawn fnc_plyrHit;"
+1 "this"//  !="_this spawn fnc_plyrHit;"
 5 "format"
 1 "skip" !"skipTime"
 1 "fail"
@@ -248,7 +248,7 @@
 5 "server_hiveReadWrite"
 5 "server_hiveWrite"
 5 "server_onPlayerDisconnect"
-5 "server_spawnCrashSite"
+//5 "server_spawnCrashSite"
 5 "server_updateNearbyObjects"
 5 "vehicle_handleInteract"
 5 "vehicle_handleServerKilled"
@@ -280,7 +280,7 @@
 5 "server_hiveReadWrite"
 5 "server_hiveWrite"
 5 "server_onPlayerDisconnect"
-5 "server_spawnCrashSite"
+//5 "server_spawnCrashSite"
 5 "server_updateNearbyObjects"
 5 "vehicle_handleInteract"
 5 "vehicle_handleServerKilled"
@@ -297,7 +297,7 @@
 5 "'"
 5 actionmonitor
 5 bis_
-5 building_spawnloot
+//5 building_spawnloot
 5 building_spawnzombies
 5 camp_spawnzombies
 5 dayz
@@ -337,9 +337,9 @@
 5 player_music
 5 player_packtent
 5 player_projectilenear
-5 player_spawn_1
-5 player_spawn_2
-5 player_spawncheck
+//5 player_spawn_1
+//5 player_spawn_2
+//5 player_spawncheck
 5 player_summedical
 5 player_switchmodel
 5 player_temp_calculation
