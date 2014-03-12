@@ -67,7 +67,7 @@ Unique Features:
 * removed some too modern looking and unecessary Vehicles.
 
 <b>Enhanced Crafting and Building System</b>
-* Buildsnapping.
+* Buildsnapping. https://www.youtube.com/watch?v=j5SXctN8WHA
 * Elevator.
 * Zed repelling Generator
 * Lighttower with great Area.
@@ -77,8 +77,6 @@ Unique Features:
 <b>Environment</b>
 * moving Objects around and putting them into Vehicles, Storage Containers etc.
 * Graphical Player Debug Window with Temperature Values Mission Info and lots more: Press F10
-* snow and cold weather periodically, go find some warm clothes.
-* faster Night means no need for Timezones and all this stuff.
 * fog in some valleys.
 * greatly increased building limit.
 * Building Lifetime without Maintance is set to 360days.
@@ -88,7 +86,7 @@ Unique Features:
 * no selfbloodbag or similar gamebreaker to encourage teamplay and use of food.
 
 <b>Items</b>
-* new Items never seen before in dayz, like:
+* new Items never seen before in Dayz, like:
 * Mg's, SPG and Granade Launcher on Tripods.
 * Mortars.
 * custom Vehicles.
@@ -116,8 +114,8 @@ Unique Features:
 * Admins can read the Chat even if they are not Ingame.
 
 <b>Rules</b>
-* Languages used in the Chat are English and German.
-* Admin Support will only be in English, German and Russian.
+* Languages allowed in Chat are English, German and Russian.
+* Admin Support will only be in English and German.
 * items lost to bugs can be restored if the cause is traceable.
 * no Adminabuse.
 * no Easymode.
@@ -126,8 +124,6 @@ Unique Features:
 * Teamspeak IP/URL: new-wotclan.de
 * Forum URL is: http://www.dayz-epoch.forumo.de
 
-
-things marked with (*) are not fully enabled but soon to be implemented.
 
 
 <b>Changelog:</b>(old pre 1.1.0)
